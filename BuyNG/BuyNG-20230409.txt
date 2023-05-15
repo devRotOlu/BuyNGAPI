@@ -1,0 +1,561 @@
+2023-04-09 06:31:50.976 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-09 06:31:51.710 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 06:31:51.712 +01:00 [INF] Hosting environment: Development
+2023-04-09 06:31:51.712 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-04-09 06:31:51.828 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-04-09 06:31:53.859 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-04-09 06:31:53.861 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1978.4530ms
+2023-04-09 06:31:53.877 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-04-09 06:31:53.931 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 34.0599ms
+2023-04-09 06:31:54.231 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 371.1951ms
+2023-04-09 06:31:54.674 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-04-09 06:31:55.406 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 732.5773ms
+2023-04-09 06:32:10.256 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 06:32:10.306 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:32:10.324 +01:00 [INF] No cached response available for this request.
+2023-04-09 06:32:10.403 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 06:32:10.445 +01:00 [INF] No saved response found in store.
+2023-04-09 06:32:10.445 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 06:32:10.465 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 06:32:10.465 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 06:32:10.465 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 06:32:10.969 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-09 06:32:11.037 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-04-09 06:32:20.377 +01:00 [INF] Executed DbCommand (321ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-04-09 06:32:20.722 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-09 06:32:21.291 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 10238.1175ms
+2023-04-09 06:32:21.296 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-09 06:32:21.324 +01:00 [INF] Generating expiration headers.
+2023-04-09 06:32:21.325 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 05:37:21 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 06:32:21.342 +01:00 [INF] Generating Validation headers.
+2023-04-09 06:32:21.354 +01:00 [INF] Validation headers generated. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26". Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT
+2023-04-09 06:32:21.356 +01:00 [INF] Generating Vary header.
+2023-04-09 06:32:21.356 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 06:32:21.385 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 06:32:21.435 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 353 application/json;+charset=utf-8 11179.0233ms
+2023-04-09 06:32:39.176 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 06:32:39.238 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:32:39.268 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 92.1402ms
+2023-04-09 06:32:39.272 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 06:32:39.276 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:32:39.277 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 06:32:39.277 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 06:32:39.277 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 06:32:39.277 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 06:32:39.277 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 06:32:39.277 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 06:32:39.280 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 06:32:39.313 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 06:32:46.153 +01:00 [INF] Executed DbCommand (224ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 06:32:46.562 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 06:32:46.563 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 7249.369ms
+2023-04-09 06:32:46.563 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 06:32:46.564 +01:00 [INF] Generating expiration headers.
+2023-04-09 06:32:46.565 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 05:37:46 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 06:32:46.565 +01:00 [INF] Generating Validation headers.
+2023-04-09 06:32:46.565 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 05:32:46 GMT
+2023-04-09 06:32:46.566 +01:00 [INF] Generating Vary header.
+2023-04-09 06:32:46.566 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 06:32:46.620 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 7348.1245ms
+2023-04-09 06:33:19.856 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 06:33:19.858 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:33:19.862 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 5.5909ms
+2023-04-09 06:33:19.868 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 06:33:19.870 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:33:19.884 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 06:33:19.884 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 06:33:19.884 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 06:33:19.884 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 06:33:19.884 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 06:33:19.884 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 06:33:19.891 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 06:33:19.891 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 06:34:06.455 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 06:34:06.456 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 06:34:06.457 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 46565.8251ms
+2023-04-09 06:34:06.457 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 06:34:06.457 +01:00 [INF] Generating expiration headers.
+2023-04-09 06:34:06.457 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 05:39:06 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 06:34:06.458 +01:00 [INF] Generating Validation headers.
+2023-04-09 06:34:06.458 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 05:34:06 GMT
+2023-04-09 06:34:06.458 +01:00 [INF] Generating Vary header.
+2023-04-09 06:34:06.458 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 06:34:06.469 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 46601.3289ms
+2023-04-09 06:40:05.530 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 06:40:05.530 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:40:05.531 +01:00 [INF] No cached response available for this request.
+2023-04-09 06:40:05.531 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 06:40:05.550 +01:00 [INF] Checking If-None-Match.
+2023-04-09 06:40:05.550 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 06:40:05.552 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 06:40:05.558 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 06:40:05.571 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 06:40:05.571 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 06:40:05.571 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 41.7115ms
+2023-04-09 06:59:38.712 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 06:59:38.718 +01:00 [INF] CORS policy execution successful.
+2023-04-09 06:59:38.748 +01:00 [INF] No cached response available for this request.
+2023-04-09 06:59:38.749 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 06:59:38.749 +01:00 [INF] Checking If-None-Match.
+2023-04-09 06:59:38.749 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 06:59:38.749 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 06:59:38.750 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 06:59:38.750 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 06:59:38.751 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 06:59:38.757 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 45.1084ms
+2023-04-09 07:05:15.870 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:05:15.877 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:05:15.882 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:05:15.882 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:05:15.885 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:05:15.885 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:05:15.885 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:05:15.885 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:05:15.890 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:05:15.891 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:05:15.894 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 22.4713ms
+2023-04-09 07:12:16.058 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:12:16.059 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:12:16.076 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:12:16.077 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:12:16.082 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:12:16.083 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:12:16.083 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:12:16.083 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:12:16.083 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:12:16.083 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:12:16.083 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 25.1607ms
+2023-04-09 07:18:29.093 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:18:29.094 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:18:29.094 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:18:29.094 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:18:29.095 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:18:29.095 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:18:29.095 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:18:29.095 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:18:29.095 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:18:29.099 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:18:29.107 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 11.7184ms
+2023-04-09 07:34:58.143 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:34:58.150 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:34:58.150 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:34:58.151 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:34:58.157 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:34:58.157 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:34:58.157 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:34:58.196 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:34:58.224 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:34:58.225 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:34:58.240 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 97.1982ms
+2023-04-09 07:42:20.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:42:20.504 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:42:20.511 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:42:20.511 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:42:20.512 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:42:20.512 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:42:20.512 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:42:20.512 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:42:20.512 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:42:20.512 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:42:20.512 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 17.5006ms
+2023-04-09 07:47:51.213 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 07:47:51.215 +01:00 [INF] CORS policy execution successful.
+2023-04-09 07:47:51.215 +01:00 [INF] No cached response available for this request.
+2023-04-09 07:47:51.216 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 07:47:51.216 +01:00 [INF] Checking If-None-Match.
+2023-04-09 07:47:51.216 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:47:51.216 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 07:47:51.216 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 07:47:51.216 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 07:47:51.220 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 07:47:51.228 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 14.8717ms
+2023-04-09 11:27:52.541 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 11:27:52.554 +01:00 [INF] CORS policy execution successful.
+2023-04-09 11:27:52.555 +01:00 [INF] No cached response available for this request.
+2023-04-09 11:27:52.555 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 11:27:52.557 +01:00 [INF] Checking If-None-Match.
+2023-04-09 11:27:52.557 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:27:52.557 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:27:52.557 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 11:27:52.571 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 11:27:52.572 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 11:27:52.588 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 48.8191ms
+2023-04-09 11:38:58.549 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 11:38:58.549 +01:00 [INF] CORS policy execution successful.
+2023-04-09 11:38:58.550 +01:00 [INF] No cached response available for this request.
+2023-04-09 11:38:58.550 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 11:38:58.551 +01:00 [INF] Checking If-None-Match.
+2023-04-09 11:38:58.552 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:38:58.553 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:38:58.553 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 11:38:58.554 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 11:38:58.554 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 11:38:58.554 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 5.6093ms
+2023-04-09 11:54:10.413 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 11:54:10.444 +01:00 [INF] CORS policy execution successful.
+2023-04-09 11:54:10.447 +01:00 [INF] No cached response available for this request.
+2023-04-09 11:54:10.447 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 11:54:10.449 +01:00 [INF] Checking If-None-Match.
+2023-04-09 11:54:10.449 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:54:10.449 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:54:10.449 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 11:54:10.454 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 11:54:10.454 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 11:54:10.459 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 46.1342ms
+2023-04-09 11:59:29.699 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 11:59:29.699 +01:00 [INF] CORS policy execution successful.
+2023-04-09 11:59:29.699 +01:00 [INF] No cached response available for this request.
+2023-04-09 11:59:29.699 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 11:59:29.700 +01:00 [INF] Checking If-None-Match.
+2023-04-09 11:59:29.700 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:59:29.700 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 11:59:29.700 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 11:59:29.700 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 11:59:29.700 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 11:59:29.700 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.6833ms
+2023-04-09 12:04:34.820 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 12:04:34.821 +01:00 [INF] CORS policy execution successful.
+2023-04-09 12:04:34.821 +01:00 [INF] No cached response available for this request.
+2023-04-09 12:04:34.821 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 12:04:34.822 +01:00 [INF] Checking If-None-Match.
+2023-04-09 12:04:34.822 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:04:34.822 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:04:34.822 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 12:04:34.825 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 12:04:34.825 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 12:04:34.826 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 5.9972ms
+2023-04-09 12:09:49.570 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 12:09:49.571 +01:00 [INF] CORS policy execution successful.
+2023-04-09 12:09:49.571 +01:00 [INF] No cached response available for this request.
+2023-04-09 12:09:49.571 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 12:09:49.572 +01:00 [INF] Checking If-None-Match.
+2023-04-09 12:09:49.572 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:09:49.572 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:09:49.572 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 12:09:49.572 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 12:09:49.573 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 12:09:49.573 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.4131ms
+2023-04-09 12:14:56.102 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 12:14:56.109 +01:00 [INF] CORS policy execution successful.
+2023-04-09 12:14:56.110 +01:00 [INF] No cached response available for this request.
+2023-04-09 12:14:56.110 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 12:14:56.110 +01:00 [INF] Checking If-None-Match.
+2023-04-09 12:14:56.111 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:14:56.111 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 12:14:56.111 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 12:14:56.111 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 12:14:56.111 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 12:14:56.112 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 9.9930ms
+2023-04-09 12:16:19.688 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 12:16:19.691 +01:00 [INF] CORS policy execution successful.
+2023-04-09 12:16:19.698 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 9.8645ms
+2023-04-09 12:16:19.723 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 12:16:19.725 +01:00 [INF] CORS policy execution successful.
+2023-04-09 12:16:19.725 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 12:16:19.726 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 12:16:19.726 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 12:16:19.728 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 12:16:19.729 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 12:16:19.729 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 12:16:19.859 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 12:16:19.895 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 12:16:29.855 +01:00 [INF] Executed DbCommand (107ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 12:16:29.876 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 12:16:29.877 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 9981.1474ms
+2023-04-09 12:16:29.878 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 12:16:29.879 +01:00 [INF] Generating expiration headers.
+2023-04-09 12:16:29.881 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 11:21:29 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 12:16:29.881 +01:00 [INF] Generating Validation headers.
+2023-04-09 12:16:29.888 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 11:16:29 GMT
+2023-04-09 12:16:29.888 +01:00 [INF] Generating Vary header.
+2023-04-09 12:16:29.888 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 12:16:29.901 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 10181.7122ms
+2023-04-09 13:41:31.737 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 13:41:31.746 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:41:31.747 +01:00 [INF] No cached response available for this request.
+2023-04-09 13:41:31.749 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:41:31.760 +01:00 [INF] Checking If-None-Match.
+2023-04-09 13:41:31.760 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:41:31.761 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:41:31.761 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 13:41:31.761 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 13:41:31.761 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 13:41:31.762 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 25.9544ms
+2023-04-09 13:50:25.661 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 13:50:25.664 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:50:25.664 +01:00 [INF] No cached response available for this request.
+2023-04-09 13:50:25.664 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:50:25.667 +01:00 [INF] Checking If-None-Match.
+2023-04-09 13:50:25.669 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:50:25.669 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:50:25.669 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 13:50:25.669 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 13:50:25.669 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 13:50:25.669 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 8.0486ms
+2023-04-09 13:50:46.097 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 13:50:46.099 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:50:46.101 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 5.1821ms
+2023-04-09 13:50:46.118 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 13:50:46.118 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:50:46.119 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:50:46.119 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 13:50:46.119 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 13:50:46.119 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 13:50:46.119 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 13:50:46.119 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 13:50:46.212 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:50:46.223 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 13:50:50.008 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 13:50:50.078 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 13:50:50.078 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 3852.0007ms
+2023-04-09 13:50:50.078 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:50:50.079 +01:00 [INF] Generating expiration headers.
+2023-04-09 13:50:50.079 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 12:55:50 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 13:50:50.079 +01:00 [INF] Generating Validation headers.
+2023-04-09 13:50:50.080 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 12:50:50 GMT
+2023-04-09 13:50:50.080 +01:00 [INF] Generating Vary header.
+2023-04-09 13:50:50.080 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 13:50:50.082 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 3964.4234ms
+2023-04-09 13:52:55.276 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 13:52:55.277 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:52:55.278 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 3.1406ms
+2023-04-09 13:52:55.287 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 27
+2023-04-09 13:52:55.290 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:52:55.291 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:52:55.291 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 13:52:55.291 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 13:52:55.292 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 13:52:55.292 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 13:52:55.292 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 13:52:55.295 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:52:55.296 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 13:53:05.618 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 13:53:05.640 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 13:53:05.640 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 10342.7068ms
+2023-04-09 13:53:05.641 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:53:05.650 +01:00 [INF] Generating expiration headers.
+2023-04-09 13:53:05.650 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 12:58:05 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 13:53:05.650 +01:00 [INF] Generating Validation headers.
+2023-04-09 13:53:05.651 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 12:53:05 GMT
+2023-04-09 13:53:05.652 +01:00 [INF] Generating Vary header.
+2023-04-09 13:53:05.652 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 13:53:05.689 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 27 - 200 - - 10402.0744ms
+2023-04-09 13:53:33.452 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 13:53:33.453 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:53:33.453 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 1.2554ms
+2023-04-09 13:53:33.464 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 13:53:33.465 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:53:33.465 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:53:33.466 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 13:53:33.467 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 13:53:33.467 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 13:53:33.467 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 13:53:33.467 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 13:53:33.468 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:53:33.468 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 13:54:32.460 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 13:54:32.461 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 13:54:32.461 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 58992.5191ms
+2023-04-09 13:54:32.461 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:54:32.461 +01:00 [INF] Generating expiration headers.
+2023-04-09 13:54:32.461 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 12:59:32 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 13:54:32.461 +01:00 [INF] Generating Validation headers.
+2023-04-09 13:54:32.462 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 12:54:32 GMT
+2023-04-09 13:54:32.462 +01:00 [INF] Generating Vary header.
+2023-04-09 13:54:32.462 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 13:54:32.463 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 58998.2790ms
+2023-04-09 13:55:15.671 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 13:55:15.672 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:55:15.673 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 2.1274ms
+2023-04-09 13:55:15.682 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-09 13:55:15.683 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:55:15.685 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:55:15.687 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 13:55:15.687 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 13:55:15.688 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 13:55:15.688 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 13:55:15.689 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 13:55:15.690 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:55:15.691 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 13:55:22.004 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 13:55:22.005 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-09 13:55:22.005 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 6313.85ms
+2023-04-09 13:55:22.005 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 13:55:22.006 +01:00 [INF] Generating expiration headers.
+2023-04-09 13:55:22.006 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 13:00:22 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 13:55:22.006 +01:00 [INF] Generating Validation headers.
+2023-04-09 13:55:22.007 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Sun, 09 Apr 2023 12:55:22 GMT
+2023-04-09 13:55:22.007 +01:00 [INF] Generating Vary header.
+2023-04-09 13:55:22.007 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 13:55:22.008 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 6325.4848ms
+2023-04-09 13:58:36.078 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 13:58:36.079 +01:00 [INF] CORS policy execution successful.
+2023-04-09 13:58:36.079 +01:00 [INF] No cached response available for this request.
+2023-04-09 13:58:36.079 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 13:58:36.080 +01:00 [INF] Checking If-None-Match.
+2023-04-09 13:58:36.080 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:58:36.080 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 13:58:36.080 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 13:58:36.080 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 13:58:36.080 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 13:58:36.081 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.3487ms
+2023-04-09 14:07:08.734 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:07:08.734 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:07:08.735 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:07:08.735 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:07:08.735 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:07:08.735 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:07:08.736 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:07:08.736 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:07:08.736 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:07:08.736 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:07:08.737 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.7319ms
+2023-04-09 14:17:26.671 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:17:26.671 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:17:26.672 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:17:26.672 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:17:26.672 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:17:26.672 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:17:26.672 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:17:26.672 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:17:26.672 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:17:26.673 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:17:26.684 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 12.8654ms
+2023-04-09 14:23:40.158 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:23:40.158 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:23:40.159 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:23:40.159 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:23:40.159 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:23:40.170 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:23:40.170 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:23:40.170 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:23:40.226 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:23:40.296 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:23:40.299 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 140.9948ms
+2023-04-09 14:30:01.881 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:30:01.893 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:30:01.906 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:30:01.907 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:30:01.907 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:30:01.907 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:30:01.907 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:30:01.907 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:30:01.908 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:30:01.908 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:30:01.930 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 50.7641ms
+2023-04-09 14:35:42.316 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:35:42.320 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:35:42.321 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:35:42.321 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:35:42.321 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:35:42.321 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:35:42.321 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:35:42.321 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:35:42.323 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:35:42.324 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:35:42.331 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 15.6838ms
+2023-04-09 14:36:25.961 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-09 14:36:25.963 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:36:25.968 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 5.7606ms
+2023-04-09 14:36:25.983 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 19
+2023-04-09 14:36:25.985 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:36:25.986 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:36:25.986 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-09 14:36:25.986 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-09 14:36:25.986 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-09 14:36:25.987 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-09 14:36:25.987 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-09 14:36:26.056 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 14:36:26.060 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-09 14:36:29.202 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-09 14:36:29.272 +01:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2023-04-09 14:36:29.298 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-04-09 14:36:29.298 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 3232.8116ms
+2023-04-09 14:36:29.298 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-09 14:36:29.299 +01:00 [INF] Generating expiration headers.
+2023-04-09 14:36:29.299 +01:00 [INF] Expiration headers generated. Expires: Sun, 09 Apr 2023 13:41:29 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-09 14:36:29.299 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-09 14:36:29.299 +01:00 [INF] Generating Vary header.
+2023-04-09 14:36:29.299 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-09 14:36:29.324 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 19 - 403 - - 3347.3609ms
+2023-04-09 14:43:43.813 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:43:43.814 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:43:43.815 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:43:43.815 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:43:43.815 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:43:43.816 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:43:43.816 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:43:43.816 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:43:43.817 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:43:43.817 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:43:43.818 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.9698ms
+2023-04-09 14:50:12.109 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 14:50:12.110 +01:00 [INF] CORS policy execution successful.
+2023-04-09 14:50:12.110 +01:00 [INF] No cached response available for this request.
+2023-04-09 14:50:12.110 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 14:50:12.113 +01:00 [INF] Checking If-None-Match.
+2023-04-09 14:50:12.114 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:50:12.114 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 14:50:12.114 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 14:50:12.115 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 14:50:12.115 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 14:50:12.116 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 6.8580ms
+2023-04-09 15:08:00.345 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 15:08:00.345 +01:00 [INF] CORS policy execution successful.
+2023-04-09 15:08:00.345 +01:00 [INF] No cached response available for this request.
+2023-04-09 15:08:00.346 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 15:08:00.346 +01:00 [INF] Checking If-None-Match.
+2023-04-09 15:08:00.346 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:08:00.346 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:08:00.346 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 15:08:00.346 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 15:08:00.357 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 15:08:00.364 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 19.1450ms
+2023-04-09 15:14:10.061 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 15:14:10.065 +01:00 [INF] CORS policy execution successful.
+2023-04-09 15:14:10.074 +01:00 [INF] No cached response available for this request.
+2023-04-09 15:14:10.079 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 15:14:10.115 +01:00 [INF] Checking If-None-Match.
+2023-04-09 15:14:10.117 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:14:10.117 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:14:10.117 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 15:14:10.117 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 15:14:10.117 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 15:14:10.125 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 64.7833ms
+2023-04-09 15:19:35.932 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-09 15:19:35.933 +01:00 [INF] CORS policy execution successful.
+2023-04-09 15:19:35.933 +01:00 [INF] No cached response available for this request.
+2023-04-09 15:19:35.933 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-09 15:19:35.934 +01:00 [INF] Checking If-None-Match.
+2023-04-09 15:19:35.934 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:19:35.934 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-09 15:19:35.934 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-09 15:19:35.935 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sun, 09 Apr 2023 05:32:21 GMT.
+2023-04-09 15:19:35.936 +01:00 [INF] The response could not be cached for this request.
+2023-04-09 15:19:35.936 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.0677ms

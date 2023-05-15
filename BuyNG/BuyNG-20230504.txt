@@ -1,0 +1,929 @@
+2023-05-04 05:02:31.586 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-04 05:02:32.611 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-04 05:02:32.613 +01:00 [INF] Hosting environment: Development
+2023-05-04 05:02:32.613 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-04 05:02:32.772 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-04 05:02:34.879 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-04 05:02:34.907 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 19.0147ms
+2023-05-04 05:02:34.907 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2164.8819ms
+2023-05-04 05:02:34.972 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-04 05:02:35.270 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 305.2948ms
+2023-05-04 05:02:35.453 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-04 05:02:36.127 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 673.5537ms
+2023-05-04 05:04:37.758 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 05:04:37.835 +01:00 [INF] CORS policy execution successful.
+2023-05-04 05:04:37.857 +01:00 [INF] No cached response available for this request.
+2023-05-04 05:04:37.972 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 05:04:38.027 +01:00 [INF] No saved response found in store.
+2023-05-04 05:04:38.027 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 05:04:38.056 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 05:04:38.056 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 05:04:38.056 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 05:04:38.542 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 05:04:38.653 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-04 05:04:48.032 +01:00 [INF] Executed DbCommand (249ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-05-04 05:04:48.323 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-04 05:04:48.795 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 10125.7136ms
+2023-05-04 05:04:48.798 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 05:04:48.823 +01:00 [INF] Generating expiration headers.
+2023-05-04 05:04:48.824 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 04:09:48 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 05:04:48.840 +01:00 [INF] Generating Validation headers.
+2023-05-04 05:04:48.852 +01:00 [INF] Validation headers generated. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26". Last-Modified: Thu, 04 May 2023 04:04:48 GMT
+2023-05-04 05:04:48.854 +01:00 [INF] Generating Vary header.
+2023-05-04 05:04:48.854 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 05:04:48.882 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 05:04:48.932 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 353 application/json;+charset=utf-8 11173.4720ms
+2023-05-04 05:29:31.082 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 05:29:31.089 +01:00 [INF] CORS policy execution successful.
+2023-05-04 05:29:31.096 +01:00 [INF] No cached response available for this request.
+2023-05-04 05:29:31.097 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 05:29:31.137 +01:00 [INF] Checking If-None-Match.
+2023-05-04 05:29:31.137 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 05:29:31.139 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 05:29:31.146 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 05:29:31.155 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 04:04:48 GMT.
+2023-05-04 05:29:31.155 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 05:29:31.157 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 75.3248ms
+2023-05-04 06:59:45.724 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-04 06:59:46.551 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-04 06:59:46.558 +01:00 [INF] Hosting environment: Development
+2023-05-04 06:59:46.558 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-04 06:59:46.677 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-04 06:59:48.686 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-04 06:59:48.708 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2045.3059ms
+2023-05-04 06:59:48.745 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-04 06:59:48.794 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 68.5567ms
+2023-05-04 06:59:48.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 235.9599ms
+2023-05-04 06:59:49.182 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-04 06:59:49.983 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 801.2902ms
+2023-05-04 07:03:33.797 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 07:03:33.884 +01:00 [INF] CORS policy execution successful.
+2023-05-04 07:03:33.918 +01:00 [INF] No cached response available for this request.
+2023-05-04 07:03:34.002 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 07:03:34.062 +01:00 [INF] No saved response found in store.
+2023-05-04 07:03:34.062 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 07:03:34.077 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 07:03:34.077 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 07:03:34.077 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 07:03:34.591 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 07:03:34.689 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-04 07:03:44.504 +01:00 [INF] Executed DbCommand (331ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-05-04 07:03:44.838 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-04 07:03:45.416 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 10709.4337ms
+2023-05-04 07:03:45.420 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 07:03:45.450 +01:00 [INF] Generating expiration headers.
+2023-05-04 07:03:45.451 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 06:08:45 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 07:03:45.470 +01:00 [INF] Generating Validation headers.
+2023-05-04 07:03:45.483 +01:00 [INF] Validation headers generated. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26". Last-Modified: Thu, 04 May 2023 06:03:45 GMT
+2023-05-04 07:03:45.484 +01:00 [INF] Generating Vary header.
+2023-05-04 07:03:45.485 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 07:03:45.513 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 07:03:45.558 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 353 application/json;+charset=utf-8 11760.5954ms
+2023-05-04 07:16:33.388 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 07:16:33.414 +01:00 [INF] CORS policy execution successful.
+2023-05-04 07:16:33.415 +01:00 [INF] No cached response available for this request.
+2023-05-04 07:16:33.415 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 07:16:33.438 +01:00 [INF] Checking If-None-Match.
+2023-05-04 07:16:33.442 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:16:33.446 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:16:33.450 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 07:16:33.469 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 07:16:33.470 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 07:16:33.474 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 85.8301ms
+2023-05-04 07:23:41.906 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 07:23:41.913 +01:00 [INF] CORS policy execution successful.
+2023-05-04 07:23:41.915 +01:00 [INF] No cached response available for this request.
+2023-05-04 07:23:41.918 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 07:23:41.918 +01:00 [INF] Checking If-None-Match.
+2023-05-04 07:23:41.918 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:23:41.918 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:23:41.918 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 07:23:41.919 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 07:23:41.919 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 07:23:41.919 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 13.7783ms
+2023-05-04 07:37:50.104 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 07:37:50.105 +01:00 [INF] CORS policy execution successful.
+2023-05-04 07:37:50.105 +01:00 [INF] No cached response available for this request.
+2023-05-04 07:37:50.106 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 07:37:50.106 +01:00 [INF] Checking If-None-Match.
+2023-05-04 07:37:50.106 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:37:50.106 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 07:37:50.106 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 07:37:50.107 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 07:37:50.108 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 07:37:50.108 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.6675ms
+2023-05-04 08:01:46.115 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 08:01:46.116 +01:00 [INF] CORS policy execution successful.
+2023-05-04 08:01:46.118 +01:00 [INF] No cached response available for this request.
+2023-05-04 08:01:46.118 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 08:01:46.118 +01:00 [INF] Checking If-None-Match.
+2023-05-04 08:01:46.118 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:01:46.119 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:01:46.119 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 08:01:46.119 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 08:01:46.119 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 08:01:46.120 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 5.0540ms
+2023-05-04 08:23:32.388 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 08:23:32.395 +01:00 [INF] CORS policy execution successful.
+2023-05-04 08:23:32.400 +01:00 [INF] No cached response available for this request.
+2023-05-04 08:23:32.401 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 08:23:32.402 +01:00 [INF] Checking If-None-Match.
+2023-05-04 08:23:32.402 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:23:32.403 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:23:32.403 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 08:23:32.403 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 08:23:32.403 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 08:23:32.411 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 24.2050ms
+2023-05-04 08:28:53.443 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 08:28:53.443 +01:00 [INF] CORS policy execution successful.
+2023-05-04 08:28:53.443 +01:00 [INF] No cached response available for this request.
+2023-05-04 08:28:53.444 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 08:28:53.444 +01:00 [INF] Checking If-None-Match.
+2023-05-04 08:28:53.444 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:28:53.444 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 08:28:53.444 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 08:28:53.444 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 08:28:53.444 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 08:28:53.445 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.8730ms
+2023-05-04 10:55:09.245 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 10:55:09.245 +01:00 [INF] CORS policy execution successful.
+2023-05-04 10:55:09.245 +01:00 [INF] No cached response available for this request.
+2023-05-04 10:55:09.245 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 10:55:09.245 +01:00 [INF] Checking If-None-Match.
+2023-05-04 10:55:09.246 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 10:55:09.246 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 10:55:09.246 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 10:55:09.247 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 10:55:09.247 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 10:55:09.247 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.2413ms
+2023-05-04 11:53:45.734 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 11:53:45.752 +01:00 [INF] CORS policy execution successful.
+2023-05-04 11:53:45.755 +01:00 [INF] No cached response available for this request.
+2023-05-04 11:53:45.756 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 11:53:45.799 +01:00 [INF] Checking If-None-Match.
+2023-05-04 11:53:45.799 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 11:53:45.799 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 11:53:45.799 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 11:53:45.802 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 11:53:45.802 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 11:53:45.807 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 79.7426ms
+2023-05-04 12:05:27.341 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 12:05:27.343 +01:00 [INF] CORS policy execution successful.
+2023-05-04 12:05:27.343 +01:00 [INF] No cached response available for this request.
+2023-05-04 12:05:27.343 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 12:05:27.343 +01:00 [INF] Checking If-None-Match.
+2023-05-04 12:05:27.343 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:05:27.343 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:05:27.343 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 12:05:27.343 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 12:05:27.343 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 12:05:27.345 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.6674ms
+2023-05-04 12:15:07.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 12:15:07.291 +01:00 [INF] CORS policy execution successful.
+2023-05-04 12:15:07.292 +01:00 [INF] No cached response available for this request.
+2023-05-04 12:15:07.292 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 12:15:07.292 +01:00 [INF] Checking If-None-Match.
+2023-05-04 12:15:07.293 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:15:07.293 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:15:07.293 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 12:15:07.293 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 12:15:07.293 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 12:15:07.293 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.6256ms
+2023-05-04 12:45:57.939 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 12:45:57.940 +01:00 [INF] CORS policy execution successful.
+2023-05-04 12:45:57.940 +01:00 [INF] No cached response available for this request.
+2023-05-04 12:45:57.940 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 12:45:57.941 +01:00 [INF] Checking If-None-Match.
+2023-05-04 12:45:57.941 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:45:57.941 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:45:57.941 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 12:45:57.941 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 12:45:57.941 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 12:45:57.941 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.6859ms
+2023-05-04 12:58:43.873 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 12:58:43.873 +01:00 [INF] CORS policy execution successful.
+2023-05-04 12:58:43.874 +01:00 [INF] No cached response available for this request.
+2023-05-04 12:58:43.874 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 12:58:43.874 +01:00 [INF] Checking If-None-Match.
+2023-05-04 12:58:43.874 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:58:43.874 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 12:58:43.875 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 12:58:43.876 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 12:58:43.877 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 12:58:43.877 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.9846ms
+2023-05-04 13:10:13.442 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 13:10:13.445 +01:00 [INF] CORS policy execution successful.
+2023-05-04 13:10:13.454 +01:00 [INF] No cached response available for this request.
+2023-05-04 13:10:13.454 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 13:10:13.454 +01:00 [INF] Checking If-None-Match.
+2023-05-04 13:10:13.454 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 13:10:13.454 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 13:10:13.454 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 13:10:13.454 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 13:10:13.454 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 13:10:13.455 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 13.0365ms
+2023-05-04 14:12:33.169 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:12:33.170 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:12:33.171 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:12:33.171 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:12:33.173 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:12:33.173 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:12:33.173 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:12:33.173 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:12:33.179 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:12:33.179 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:12:33.182 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 28.3560ms
+2023-05-04 14:18:40.035 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:18:40.035 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:18:40.035 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:18:40.035 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:18:40.035 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:18:40.036 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:18:40.036 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:18:40.036 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:18:40.036 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:18:40.036 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:18:40.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.0729ms
+2023-05-04 14:23:49.933 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:23:49.933 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:23:49.933 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:23:49.933 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:23:49.933 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:23:49.933 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:23:49.933 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:23:49.933 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:23:49.933 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:23:49.933 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:23:49.934 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.1419ms
+2023-05-04 14:29:49.834 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:29:49.839 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:29:49.839 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:29:49.839 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:29:49.839 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:29:49.839 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:29:49.839 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:29:49.839 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:29:49.839 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:29:49.840 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:29:49.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 7.2532ms
+2023-05-04 14:34:59.377 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:34:59.377 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:34:59.384 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:34:59.384 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:34:59.384 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:34:59.384 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:34:59.384 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:34:59.385 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:34:59.388 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:34:59.388 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:34:59.389 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 12.7116ms
+2023-05-04 14:40:28.612 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:40:28.618 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:40:28.620 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:40:28.620 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:40:28.621 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:40:28.621 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:40:28.621 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:40:28.622 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:40:28.622 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:40:28.622 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:40:28.624 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 12.1001ms
+2023-05-04 14:45:31.503 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:45:31.507 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:45:31.509 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:45:31.511 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:45:31.516 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:45:31.516 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:45:31.516 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:45:31.516 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:45:31.516 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:45:31.516 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:45:31.521 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 19.7640ms
+2023-05-04 14:55:45.591 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 14:55:45.591 +01:00 [INF] CORS policy execution successful.
+2023-05-04 14:55:45.591 +01:00 [INF] No cached response available for this request.
+2023-05-04 14:55:45.591 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 14:55:45.592 +01:00 [INF] Checking If-None-Match.
+2023-05-04 14:55:45.592 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:55:45.592 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-04 14:55:45.592 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-04 14:55:45.592 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 04 May 2023 06:03:45 GMT.
+2023-05-04 14:55:45.592 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 14:55:45.593 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.5045ms
+2023-05-04 15:44:02.171 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 15:44:02.236 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 15:44:02.239 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 15:44:02.240 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 15:44:02.259 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-04 15:44:02.285 +01:00 [INF] Applying migration '20230504144105_seededCategories'.
+2023-05-04 15:44:02.606 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = N'12b69bb3-2565-4b61-839f-be79b149b001';
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.613 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = N'c7c0b784-bb57-49f9-a357-3bae339e84e7';
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.650 +01:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD [Location] nvarchar(max) NOT NULL DEFAULT N'';
+2023-05-04 15:44:02.681 +01:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (N'7c52e5ff-bf4b-425a-a6b7-8fd49a8832bd', N'4ab6c6f0-655f-45a6-8786-78e1e10a4b3b', N'User', N'USER'),
+(N'cc896ac8-33f5-4cf4-8a57-0c9b62831033', N'f790d77f-c896-4bd5-813e-40cbd3ad547a', N'Administrator', N'ADMINISTRATOR');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2023-05-04 15:44:02.685 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductCategories] SET [Name] = N'Health & Beauty'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.685 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductCategories] SET [Name] = N'Home & Office'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.686 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductCategories] SET [Name] = N'Phones and Tablets'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.687 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductCategories] SET [Name] = N'Computing'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.689 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductCategories] SET [Name] = N'Electronics'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-05-04 15:44:02.725 +01:00 [ERR] Failed executing DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[ProductCategories]'))
+    SET IDENTITY_INSERT [ProductCategories] ON;
+INSERT INTO [ProductCategories] ([Id], [Name])
+VALUES (6, N'Fashion'),
+(7, N'Baby Products'),
+(8, N'Gaming'),
+(9, N'Sporting Goods'),
+(10, N'Automobile'),
+(11, N'Other Categories');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[ProductCategories]'))
+    SET IDENTITY_INSERT [ProductCategories] OFF;
+2023-05-04 16:05:26.814 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:05:26.896 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:05:26.900 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:05:26.900 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:05:26.917 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-04 16:05:26.933 +01:00 [INF] Applying migration '20230504145927_initialMigration'.
+2023-05-04 16:05:27.085 +01:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2023-05-04 16:18:19.333 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:18:22.456 +01:00 [INF] Executed DbCommand (3,042ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [BuyNG_db] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2023-05-04 16:18:22.509 +01:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+DROP DATABASE [BuyNG_db];
+2023-05-04 16:21:46.183 +01:00 [INF] Executed DbCommand (318ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [BuyNG_db];
+2023-05-04 16:21:46.340 +01:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [BuyNG_db] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-05-04 16:21:46.380 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:21:46.543 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-05-04 16:21:46.545 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:21:46.572 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:21:46.580 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-04 16:21:46.609 +01:00 [INF] Applying migration '20230504152054_initialMigration'.
+2023-05-04 16:21:46.774 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2023-05-04 16:21:46.776 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2023-05-04 16:21:46.779 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ProductCategories] PRIMARY KEY ([Id])
+);
+2023-05-04 16:21:46.781 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.783 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.786 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.788 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.792 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.794 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] float NOT NULL,
+    [Quantity] int NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Location] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    [ApplicationUserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_AspNetUsers_ApplicationUserId] FOREIGN KEY ([ApplicationUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_ProductCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ProductCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.796 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ImageUrls] (
+    [Id] int NOT NULL IDENTITY,
+    [Url] nvarchar(max) NOT NULL,
+    [ProductId] int NOT NULL,
+    CONSTRAINT [PK_ImageUrls] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ImageUrls_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:21:46.808 +01:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductsToBuy] (
+    [Id] int NOT NULL IDENTITY,
+    [ApplicationUserId] nvarchar(450) NOT NULL,
+    [ProductId] int NOT NULL,
+    [ProductCount] int NOT NULL,
+    CONSTRAINT [PK_ProductsToBuy] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductsToBuy_AspNetUsers_ApplicationUserId] FOREIGN KEY ([ApplicationUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductsToBuy_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.157 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:28:37.210 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:28:37.214 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:28:37.214 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:28:37.226 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-04 16:28:37.242 +01:00 [INF] Applying migration '20230504152054_initialMigration'.
+2023-05-04 16:28:37.379 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2023-05-04 16:28:37.381 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2023-05-04 16:28:37.382 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ProductCategories] PRIMARY KEY ([Id])
+);
+2023-05-04 16:28:37.383 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.385 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.387 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.389 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.391 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:28:37.399 +01:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] float NOT NULL,
+    [Quantity] int NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Location] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    [ApplicationUserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_AspNetUsers_ApplicationUserId] FOREIGN KEY ([ApplicationUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_ProductCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ProductCategories] ([Id]) ON DELETE SET NULL
+);
+2023-05-04 16:30:39.742 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:30:39.798 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:30:39.801 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-04 16:30:39.801 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-04 16:30:39.814 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-04 16:30:39.830 +01:00 [INF] Applying migration '20230504152054_initialMigration'.
+2023-05-04 16:30:39.972 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2023-05-04 16:30:39.973 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2023-05-04 16:30:39.976 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ProductCategories] PRIMARY KEY ([Id])
+);
+2023-05-04 16:30:39.978 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.980 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.983 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.986 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.988 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.989 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] float NOT NULL,
+    [Quantity] int NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Location] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    [ApplicationUserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_AspNetUsers_ApplicationUserId] FOREIGN KEY ([ApplicationUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_ProductCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ProductCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.991 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ImageUrls] (
+    [Id] int NOT NULL IDENTITY,
+    [Url] nvarchar(max) NOT NULL,
+    [ProductId] int NOT NULL,
+    CONSTRAINT [PK_ImageUrls] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ImageUrls_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:39.992 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductsToBuy] (
+    [Id] int NOT NULL IDENTITY,
+    [ApplicationUserId] nvarchar(450) NOT NULL,
+    [ProductId] int NOT NULL,
+    [ProductCount] int NOT NULL,
+    CONSTRAINT [PK_ProductsToBuy] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductsToBuy_AspNetUsers_ApplicationUserId] FOREIGN KEY ([ApplicationUserId]) REFERENCES [AspNetUsers] ([Id]),
+    CONSTRAINT [FK_ProductsToBuy_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2023-05-04 16:30:40.029 +01:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (N'153ac9e5-0e4a-40f4-9604-e42a9ef35ca8', N'1503da26-b0f3-4733-9aa8-411260365902', N'User', N'USER'),
+(N'fabf652b-6144-4c3e-8e8d-4ea00111e08b', N'612124fb-645f-4dc2-ae32-eff638fa3bec', N'Administrator', N'ADMINISTRATOR');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2023-05-04 16:30:40.038 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[ProductCategories]'))
+    SET IDENTITY_INSERT [ProductCategories] ON;
+INSERT INTO [ProductCategories] ([Id], [Name])
+VALUES (1, N'Health & Beauty'),
+(2, N'Home & Office'),
+(3, N'Phones and Tablets'),
+(4, N'Computing'),
+(5, N'Electronics'),
+(6, N'Fashion'),
+(7, N'Baby Products'),
+(8, N'Gaming'),
+(9, N'Sporting Goods'),
+(10, N'Automobile'),
+(11, N'Other Categories');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Name') AND [object_id] = OBJECT_ID(N'[ProductCategories]'))
+    SET IDENTITY_INSERT [ProductCategories] OFF;
+2023-05-04 16:30:40.049 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2023-05-04 16:30:40.086 +01:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2023-05-04 16:30:40.088 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2023-05-04 16:30:40.088 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2023-05-04 16:30:40.089 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2023-05-04 16:30:40.090 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2023-05-04 16:30:40.092 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2023-05-04 16:30:40.093 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ImageUrls_ProductId] ON [ImageUrls] ([ProductId]);
+2023-05-04 16:30:40.093 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_ApplicationUserId] ON [Products] ([ApplicationUserId]);
+2023-05-04 16:30:40.095 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2023-05-04 16:30:40.096 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductsToBuy_ApplicationUserId] ON [ProductsToBuy] ([ApplicationUserId]);
+2023-05-04 16:30:40.097 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductsToBuy_ProductId] ON [ProductsToBuy] ([ProductId]);
+2023-05-04 16:30:40.099 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230504152054_initialMigration', N'7.0.0');
+2023-05-04 16:33:41.398 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-04 16:33:41.696 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-04 16:33:41.697 +01:00 [INF] Hosting environment: Development
+2023-05-04 16:33:41.697 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-04 16:33:41.746 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-04 16:33:42.563 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-04 16:33:42.573 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 832.1507ms
+2023-05-04 16:33:42.583 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-04 16:33:42.598 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 9.9992ms
+2023-05-04 16:33:42.730 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.3454ms
+2023-05-04 16:33:42.792 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-04 16:33:43.034 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.2477ms
+2023-05-04 16:33:50.710 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 16:33:50.737 +01:00 [INF] CORS policy execution successful.
+2023-05-04 16:33:50.748 +01:00 [INF] No cached response available for this request.
+2023-05-04 16:33:50.793 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 16:33:50.807 +01:00 [INF] No saved response found in store.
+2023-05-04 16:33:50.807 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 16:33:50.813 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 16:33:50.813 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 16:33:50.814 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 16:33:51.043 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:33:51.090 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-04 16:33:51.764 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 16:33:51.769 +01:00 [INF] CORS policy execution successful.
+2023-05-04 16:33:51.769 +01:00 [INF] No cached response available for this request.
+2023-05-04 16:33:51.770 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 16:33:51.770 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-04 16:33:51.770 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 16:33:51.770 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 16:33:51.770 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 16:33:51.770 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 16:33:51.778 +01:00 [INF] Request get:/api/productcategory from IP ::1 has been blocked, quota 1/2s exceeded by 1. Blocked by rule *, TraceIdentifier 8000005c-0001-fe00-b63f-84710c7967bb. MonitorMode: False
+2023-05-04 16:33:51.792 +01:00 [INF] Generating expiration headers.
+2023-05-04 16:33:51.793 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 15:38:51 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 16:33:51.800 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-04 16:33:51.800 +01:00 [INF] Generating Vary header.
+2023-05-04 16:33:51.800 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 16:33:51.813 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 16:33:51.814 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 429 - text/plain 49.9578ms
+2023-05-04 16:33:54.584 +01:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-05-04 16:33:54.722 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-04 16:33:54.959 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 3864.0244ms
+2023-05-04 16:33:54.960 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:33:54.965 +01:00 [INF] Generating expiration headers.
+2023-05-04 16:33:54.965 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 15:38:54 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 16:33:54.965 +01:00 [INF] Generating Validation headers.
+2023-05-04 16:33:54.969 +01:00 [INF] Validation headers generated. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46". Last-Modified: Thu, 04 May 2023 15:33:54 GMT
+2023-05-04 16:33:54.969 +01:00 [INF] Generating Vary header.
+2023-05-04 16:33:54.969 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 16:33:54.983 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 16:33:55.008 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 4298.7216ms
+2023-05-04 16:38:09.967 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 16:38:09.970 +01:00 [INF] No cached response available for this request.
+2023-05-04 16:38:09.972 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 16:38:09.972 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-04 16:38:09.972 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 16:38:09.972 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 16:38:09.972 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 16:38:09.972 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 16:38:09.980 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:38:09.985 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-04 16:38:10.077 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-05-04 16:38:10.078 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-04 16:38:10.078 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 91.6056ms
+2023-05-04 16:38:10.078 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:38:10.079 +01:00 [INF] Generating expiration headers.
+2023-05-04 16:38:10.079 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 15:43:10 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 16:38:10.079 +01:00 [INF] Generating Validation headers.
+2023-05-04 16:38:10.079 +01:00 [INF] Validation headers generated. ETag: Strong, "59A254E13C2770DADE7850D5BBD7092E". Last-Modified: Thu, 04 May 2023 15:38:10 GMT
+2023-05-04 16:38:10.079 +01:00 [INF] Generating Vary header.
+2023-05-04 16:38:10.079 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 16:38:10.079 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 16:38:10.080 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 112.7501ms
+2023-05-04 16:41:15.124 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-04 16:41:15.128 +01:00 [INF] CORS policy execution successful.
+2023-05-04 16:41:15.130 +01:00 [INF] No cached response available for this request.
+2023-05-04 16:41:15.130 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-04 16:41:15.131 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-04 16:41:15.131 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-04 16:41:15.131 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-04 16:41:15.131 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-04 16:41:15.131 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-04 16:41:15.144 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:41:15.144 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-04 16:41:15.163 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-05-04 16:41:15.163 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-04 16:41:15.163 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 19.6249ms
+2023-05-04 16:41:15.163 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-04 16:41:15.163 +01:00 [INF] Generating expiration headers.
+2023-05-04 16:41:15.164 +01:00 [INF] Expiration headers generated. Expires: Thu, 04 May 2023 15:46:15 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-04 16:41:15.164 +01:00 [INF] Generating Validation headers.
+2023-05-04 16:41:15.164 +01:00 [INF] Validation headers generated. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46". Last-Modified: Thu, 04 May 2023 15:41:15 GMT
+2023-05-04 16:41:15.164 +01:00 [INF] Generating Vary header.
+2023-05-04 16:41:15.164 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-04 16:41:15.164 +01:00 [INF] The response could not be cached for this request.
+2023-05-04 16:41:15.164 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 41.0878ms

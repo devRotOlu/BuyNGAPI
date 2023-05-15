@@ -1,0 +1,57 @@
+2023-04-28 05:12:29.823 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 05:12:31.012 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 05:12:31.013 +01:00 [INF] Hosting environment: Development
+2023-04-28 05:12:31.013 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-04-28 05:12:31.123 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-04-28 05:12:34.002 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/swagger-ui-bundle.js - -
+2023-04-28 05:12:34.008 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/swagger-ui.css - -
+2023-04-28 05:12:34.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2912.8192ms
+2023-04-28 05:12:34.039 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 05:12:34.094 +01:00 [INF] The file /swagger-ui-bundle.js was not modified
+2023-04-28 05:12:34.094 +01:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2023-04-28 05:12:34.096 +01:00 [INF] The file /swagger-ui.css was not modified
+2023-04-28 05:12:34.098 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 96.6251ms
+2023-04-28 05:12:34.098 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/swagger-ui.css - - - 304 - text/css 89.7164ms
+2023-04-28 05:12:34.098 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-04-28 05:12:34.098 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 59.2093ms
+2023-04-28 05:12:34.124 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 19.3478ms
+2023-04-28 05:12:34.164 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-04-28 05:12:34.459 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 294.7306ms
+2023-04-28 05:12:35.007 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-04-28 05:12:35.696 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 689.1027ms
+2023-04-28 05:12:59.151 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-28 05:12:59.220 +01:00 [INF] CORS policy execution successful.
+2023-04-28 05:12:59.246 +01:00 [INF] No cached response available for this request.
+2023-04-28 05:12:59.345 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-28 05:12:59.353 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-04-28 05:12:59.353 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-28 05:12:59.366 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-28 05:12:59.366 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-28 05:12:59.366 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-28 05:12:59.805 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-28 05:12:59.887 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-04-28 05:13:08.772 +01:00 [INF] Executed DbCommand (287ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-04-28 05:13:09.238 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 05:13:09.822 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 9922.2031ms
+2023-04-28 05:13:09.825 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-28 05:13:09.855 +01:00 [INF] Generating expiration headers.
+2023-04-28 05:13:09.856 +01:00 [INF] Expiration headers generated. Expires: Fri, 28 Apr 2023 04:18:09 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-28 05:13:09.874 +01:00 [INF] Generating Validation headers.
+2023-04-28 05:13:09.927 +01:00 [INF] Validation headers generated. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26". Last-Modified: Fri, 28 Apr 2023 04:13:09 GMT
+2023-04-28 05:13:09.938 +01:00 [INF] Generating Vary header.
+2023-04-28 05:13:09.938 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-28 05:13:09.963 +01:00 [INF] The response could not be cached for this request.
+2023-04-28 05:13:10.031 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 353 application/json;+charset=utf-8 10880.4644ms
+2023-04-28 05:18:25.471 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-28 05:18:25.524 +01:00 [INF] CORS policy execution successful.
+2023-04-28 05:18:25.535 +01:00 [INF] No cached response available for this request.
+2023-04-28 05:18:25.538 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-28 05:18:25.597 +01:00 [INF] Checking If-None-Match.
+2023-04-28 05:18:25.598 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-28 05:18:25.603 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-28 05:18:25.614 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-28 05:18:25.634 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Fri, 28 Apr 2023 04:13:09 GMT.
+2023-04-28 05:18:25.635 +01:00 [INF] The response could not be cached for this request.
+2023-04-28 05:18:25.637 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 171.9642ms

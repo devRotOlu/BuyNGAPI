@@ -1,0 +1,407 @@
+2023-04-23 04:54:42.356 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 04:54:42.405 +01:00 [INF] CORS policy execution successful.
+2023-04-23 04:54:42.405 +01:00 [INF] No cached response available for this request.
+2023-04-23 04:54:42.405 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 04:54:42.405 +01:00 [INF] Checking If-None-Match.
+2023-04-23 04:54:42.405 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 04:54:42.405 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 04:54:42.405 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 04:54:42.406 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 04:54:42.406 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 04:54:42.407 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 50.7517ms
+2023-04-23 05:01:50.042 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:01:50.045 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:01:50.045 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:01:50.045 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:01:50.045 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:01:50.045 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:01:50.045 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:01:50.045 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:01:50.045 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:01:50.045 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:01:50.047 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 43.6691ms
+2023-04-23 05:07:49.795 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:07:49.795 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:07:49.796 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:07:49.796 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:07:49.797 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:07:49.797 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:07:49.797 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:07:49.797 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:07:49.797 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:07:49.797 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:07:49.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.1890ms
+2023-04-23 05:16:54.474 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:16:54.476 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:16:54.477 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:16:54.477 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:16:54.477 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:16:54.477 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:16:54.478 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:16:54.478 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:16:54.515 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:16:54.543 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:16:54.544 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 69.7302ms
+2023-04-23 05:22:09.621 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:22:09.622 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:22:09.622 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:22:09.622 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:22:09.622 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:22:09.622 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:22:09.622 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:22:09.622 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:22:09.622 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:22:09.622 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:22:09.623 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.1102ms
+2023-04-23 05:27:53.529 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:27:53.530 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:27:53.530 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:27:53.530 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:27:53.530 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:27:53.531 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:27:53.531 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:27:53.531 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:27:53.531 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:27:53.531 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:27:53.532 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.8711ms
+2023-04-23 05:33:19.340 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:33:19.369 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:33:19.374 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:33:19.377 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:33:19.379 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:33:19.379 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:33:19.379 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:33:19.382 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:33:19.383 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:33:19.383 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:33:19.383 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 43.9425ms
+2023-04-23 05:38:37.034 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:38:37.034 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:38:37.034 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:38:37.034 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:38:37.035 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:38:37.035 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:38:37.035 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:38:37.035 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:38:37.035 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:38:37.035 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:38:37.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.4550ms
+2023-04-23 05:43:37.101 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:43:37.102 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:43:37.102 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:43:37.102 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:43:37.102 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:43:37.102 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:43:37.102 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:43:37.102 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:43:37.102 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:43:37.102 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:43:37.102 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.1381ms
+2023-04-23 05:48:52.314 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:48:52.315 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:48:52.324 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:48:52.325 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:48:52.325 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:48:52.325 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:48:52.325 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:48:52.325 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:48:52.325 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:48:52.329 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:48:52.329 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 18.1456ms
+2023-04-23 05:55:09.776 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 05:55:09.777 +01:00 [INF] CORS policy execution successful.
+2023-04-23 05:55:09.777 +01:00 [INF] No cached response available for this request.
+2023-04-23 05:55:09.777 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 05:55:09.777 +01:00 [INF] Checking If-None-Match.
+2023-04-23 05:55:09.777 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:55:09.777 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 05:55:09.777 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 05:55:09.777 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 05:55:09.777 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 05:55:09.779 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.3590ms
+2023-04-23 07:09:32.074 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:09:32.081 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:09:32.088 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:09:32.088 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:09:32.090 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:09:32.090 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:09:32.090 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:09:32.090 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:09:32.090 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:09:32.090 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:09:32.091 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 16.7278ms
+2023-04-23 07:15:43.733 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:15:43.733 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:15:43.733 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:15:43.734 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:15:43.734 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:15:43.734 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:15:43.734 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:15:43.734 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:15:43.734 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:15:43.734 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:15:43.734 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.6925ms
+2023-04-23 07:22:35.335 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:22:35.338 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:22:35.342 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:22:35.344 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:22:35.344 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:22:35.344 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:22:35.354 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:22:35.354 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:22:35.355 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:22:35.355 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:22:35.355 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 51.7479ms
+2023-04-23 07:27:48.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:27:48.616 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:27:48.616 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:27:48.616 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:27:48.616 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:27:48.617 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:27:48.617 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:27:48.617 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:27:48.617 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:27:48.617 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:27:48.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 8.6355ms
+2023-04-23 07:33:54.661 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:33:54.663 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:33:54.663 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:33:54.663 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:33:54.664 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:33:54.664 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:33:54.664 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:33:54.664 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:33:54.664 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:33:54.664 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:33:54.665 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.4264ms
+2023-04-23 07:38:59.925 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:38:59.925 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:38:59.925 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:38:59.925 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:38:59.926 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:38:59.926 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:38:59.926 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:38:59.926 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:38:59.926 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:38:59.926 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:38:59.928 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.2371ms
+2023-04-23 07:44:21.426 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:44:21.427 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:44:21.427 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:44:21.427 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:44:21.428 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:44:21.428 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:44:21.428 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:44:21.431 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:44:21.432 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:44:21.437 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:44:21.465 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 39.1852ms
+2023-04-23 07:50:10.181 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:50:10.224 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:50:10.232 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:50:10.240 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:50:10.256 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:50:10.256 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:50:10.256 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:50:10.256 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:50:10.284 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:50:10.285 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:50:10.286 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 105.3326ms
+2023-04-23 07:55:27.310 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 07:55:27.312 +01:00 [INF] CORS policy execution successful.
+2023-04-23 07:55:27.313 +01:00 [INF] No cached response available for this request.
+2023-04-23 07:55:27.314 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 07:55:27.315 +01:00 [INF] Checking If-None-Match.
+2023-04-23 07:55:27.315 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:55:27.315 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 07:55:27.315 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 07:55:27.315 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 07:55:27.315 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 07:55:27.316 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 5.4799ms
+2023-04-23 08:07:56.473 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:07:56.473 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:07:56.474 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:07:56.474 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:07:56.474 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:07:56.474 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:07:56.474 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:07:56.474 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:07:56.479 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:07:56.479 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:07:56.480 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 6.8779ms
+2023-04-23 08:13:13.669 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:13:13.669 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:13:13.669 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:13:13.670 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:13:13.670 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:13:13.670 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:13:13.670 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:13:13.670 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:13:13.670 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:13:13.671 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:13:13.674 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 5.1260ms
+2023-04-23 08:18:14.074 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:18:14.075 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:18:14.075 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:18:14.075 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:18:14.076 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:18:14.076 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:18:14.076 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:18:14.076 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:18:14.076 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:18:14.078 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:18:14.079 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.6912ms
+2023-04-23 08:35:31.619 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:35:31.625 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:35:31.628 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:35:31.628 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:35:31.631 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:35:31.631 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:35:31.631 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:35:31.631 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:35:31.631 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:35:31.638 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:35:31.640 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 21.1980ms
+2023-04-23 08:41:03.104 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:41:03.112 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:41:03.115 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:41:03.119 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:41:03.119 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:41:03.119 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:41:03.119 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:41:03.119 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:41:03.124 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:41:03.127 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:41:03.127 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 22.6787ms
+2023-04-23 08:46:57.651 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:46:57.655 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:46:57.658 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:46:57.658 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:46:57.659 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:46:57.659 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:46:57.659 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:46:57.659 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:46:57.659 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:46:57.661 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:46:57.669 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 10.7669ms
+2023-04-23 08:56:27.477 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 08:56:27.477 +01:00 [INF] CORS policy execution successful.
+2023-04-23 08:56:27.478 +01:00 [INF] No cached response available for this request.
+2023-04-23 08:56:27.478 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 08:56:27.478 +01:00 [INF] Checking If-None-Match.
+2023-04-23 08:56:27.478 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:56:27.478 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 08:56:27.478 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 08:56:27.478 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 08:56:27.478 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 08:56:27.479 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.2856ms
+2023-04-23 09:41:10.796 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 09:41:10.798 +01:00 [INF] CORS policy execution successful.
+2023-04-23 09:41:10.806 +01:00 [INF] No cached response available for this request.
+2023-04-23 09:41:10.806 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 09:41:10.806 +01:00 [INF] Checking If-None-Match.
+2023-04-23 09:41:10.806 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:41:10.806 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:41:10.806 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 09:41:10.806 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 09:41:10.806 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 09:41:10.807 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 10.8699ms
+2023-04-23 09:46:48.105 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 09:46:48.113 +01:00 [INF] CORS policy execution successful.
+2023-04-23 09:46:48.146 +01:00 [INF] No cached response available for this request.
+2023-04-23 09:46:48.146 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 09:46:48.146 +01:00 [INF] Checking If-None-Match.
+2023-04-23 09:46:48.146 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:46:48.146 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:46:48.148 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 09:46:48.148 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 09:46:48.148 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 09:46:48.155 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 45.2840ms
+2023-04-23 09:54:35.960 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 09:54:35.960 +01:00 [INF] CORS policy execution successful.
+2023-04-23 09:54:35.961 +01:00 [INF] No cached response available for this request.
+2023-04-23 09:54:35.961 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 09:54:35.963 +01:00 [INF] Checking If-None-Match.
+2023-04-23 09:54:35.963 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:54:35.963 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 09:54:35.963 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 09:54:35.964 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 09:54:35.964 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 09:54:35.965 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.9510ms
+2023-04-23 10:04:04.251 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 10:04:04.251 +01:00 [INF] CORS policy execution successful.
+2023-04-23 10:04:04.252 +01:00 [INF] No cached response available for this request.
+2023-04-23 10:04:04.253 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 10:04:04.253 +01:00 [INF] Checking If-None-Match.
+2023-04-23 10:04:04.253 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:04:04.253 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:04:04.253 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 10:04:04.253 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 10:04:04.253 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 10:04:04.254 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.4608ms
+2023-04-23 10:18:01.500 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 10:18:01.501 +01:00 [INF] CORS policy execution successful.
+2023-04-23 10:18:01.501 +01:00 [INF] No cached response available for this request.
+2023-04-23 10:18:01.501 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 10:18:01.502 +01:00 [INF] Checking If-None-Match.
+2023-04-23 10:18:01.502 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:18:01.502 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:18:01.502 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 10:18:01.502 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 10:18:01.502 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 10:18:01.504 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.1641ms
+2023-04-23 10:26:57.695 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 10:26:57.696 +01:00 [INF] CORS policy execution successful.
+2023-04-23 10:26:57.698 +01:00 [INF] No cached response available for this request.
+2023-04-23 10:26:57.698 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 10:26:57.698 +01:00 [INF] Checking If-None-Match.
+2023-04-23 10:26:57.698 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:26:57.698 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:26:57.698 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 10:26:57.699 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 10:26:57.699 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 10:26:57.699 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.6555ms
+2023-04-23 10:32:31.779 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 10:32:31.780 +01:00 [INF] CORS policy execution successful.
+2023-04-23 10:32:31.780 +01:00 [INF] No cached response available for this request.
+2023-04-23 10:32:31.780 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 10:32:31.781 +01:00 [INF] Checking If-None-Match.
+2023-04-23 10:32:31.781 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:32:31.781 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:32:31.781 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 10:32:31.782 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 10:32:31.785 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 10:32:31.796 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 6.3908ms
+2023-04-23 10:57:50.256 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 10:57:50.301 +01:00 [INF] CORS policy execution successful.
+2023-04-23 10:57:50.303 +01:00 [INF] No cached response available for this request.
+2023-04-23 10:57:50.304 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 10:57:50.304 +01:00 [INF] Checking If-None-Match.
+2023-04-23 10:57:50.304 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:57:50.304 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 10:57:50.304 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 10:57:50.305 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 10:57:50.305 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 10:57:50.318 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 50.3796ms
+2023-04-23 11:06:59.447 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 11:06:59.451 +01:00 [INF] CORS policy execution successful.
+2023-04-23 11:06:59.452 +01:00 [INF] No cached response available for this request.
+2023-04-23 11:06:59.452 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 11:06:59.453 +01:00 [INF] Checking If-None-Match.
+2023-04-23 11:06:59.453 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 11:06:59.453 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 11:06:59.454 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 11:06:59.454 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 11:06:59.454 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 11:06:59.454 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 6.9241ms
+2023-04-23 11:34:10.350 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-23 11:34:10.351 +01:00 [INF] CORS policy execution successful.
+2023-04-23 11:34:10.351 +01:00 [INF] No cached response available for this request.
+2023-04-23 11:34:10.351 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-23 11:34:10.351 +01:00 [INF] Checking If-None-Match.
+2023-04-23 11:34:10.352 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 11:34:10.352 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-23 11:34:10.352 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-23 11:34:10.352 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Sat, 22 Apr 2023 03:37:19 GMT.
+2023-04-23 11:34:10.352 +01:00 [INF] The response could not be cached for this request.
+2023-04-23 11:34:10.354 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.0970ms

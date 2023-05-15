@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+	  <PackageReference Include="AutoMapper" Version="11.0.0" />
+	  <PackageReference Include="Marvin.Cache.Headers" Version="7.0.0-beta" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.13" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+	  <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	  <PackageReference Include="Serilog" Version="2.10.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	  <PackageReference Include="X.PagedList" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuyNG.Data\BuyNG.Data.csproj" />
+  </ItemGroup>
+
+</Project>

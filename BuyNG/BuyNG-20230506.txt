@@ -1,0 +1,51 @@
+2023-05-06 10:55:17.975 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-06 10:55:18.862 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-06 10:55:18.879 +01:00 [INF] Hosting environment: Development
+2023-05-06 10:55:18.879 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-06 10:55:19.001 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-06 10:55:21.007 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2019.6578ms
+2023-05-06 10:55:21.205 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-06 10:55:21.226 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 15.9201ms
+2023-05-06 10:55:21.704 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-06 10:55:21.922 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.5266ms
+2023-05-06 10:55:22.745 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-06 10:55:24.139 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1393.3288ms
+2023-05-06 10:55:38.760 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-06 10:55:38.843 +01:00 [INF] CORS policy execution successful.
+2023-05-06 10:55:38.861 +01:00 [INF] No cached response available for this request.
+2023-05-06 10:55:38.924 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-06 10:55:38.933 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-06 10:55:38.933 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-06 10:55:38.947 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-06 10:55:38.947 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-06 10:55:38.947 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-06 10:55:39.358 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-06 10:55:39.432 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-06 10:55:45.851 +01:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity]
+FROM [ProductCategories] AS [p]
+LEFT JOIN [Products] AS [p0] ON [p].[Id] = [p0].[CategoryId]
+ORDER BY [p].[Id]
+2023-05-06 10:55:46.084 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-06 10:55:46.460 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 7009.6144ms
+2023-05-06 10:55:46.469 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-06 10:55:46.493 +01:00 [INF] Generating expiration headers.
+2023-05-06 10:55:46.494 +01:00 [INF] Expiration headers generated. Expires: Sat, 06 May 2023 10:00:46 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-06 10:55:46.509 +01:00 [INF] Generating Validation headers.
+2023-05-06 10:55:46.540 +01:00 [INF] Validation headers generated. ETag: Strong, "2B2948D2433EBA17850AA2694276ACF6". Last-Modified: Sat, 06 May 2023 09:55:46 GMT
+2023-05-06 10:55:46.541 +01:00 [INF] Generating Vary header.
+2023-05-06 10:55:46.541 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-06 10:55:46.561 +01:00 [INF] The response could not be cached for this request.
+2023-05-06 10:55:46.592 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 1315 application/json;+charset=utf-8 7831.8554ms
+2023-05-06 10:59:30.344 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-06 10:59:30.946 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-06 10:59:30.947 +01:00 [INF] Hosting environment: Development
+2023-05-06 10:59:30.947 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-06 10:59:31.018 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-06 10:59:32.548 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-06 10:59:32.568 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1561.8436ms
+2023-05-06 10:59:32.569 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 14.5563ms
+2023-05-06 10:59:32.587 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-06 10:59:32.765 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 178.1510ms
+2023-05-06 10:59:32.937 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-06 10:59:33.580 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 643.4008ms

@@ -1,0 +1,1222 @@
+2023-04-20 12:09:01.214 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-20 12:09:01.896 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-20 12:09:01.898 +01:00 [INF] Hosting environment: Development
+2023-04-20 12:09:01.898 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-04-20 12:09:02.032 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-04-20 12:09:04.068 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-04-20 12:09:04.072 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2049.9906ms
+2023-04-20 12:09:04.093 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 19.6541ms
+2023-04-20 12:09:04.103 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-04-20 12:09:04.426 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 322.8169ms
+2023-04-20 12:09:04.645 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-04-20 12:09:05.966 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1321.3573ms
+2023-04-20 12:09:17.024 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 12:09:17.041 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:09:17.048 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 24.6530ms
+2023-04-20 12:09:17.051 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 12:09:17.074 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:09:17.143 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:09:17.146 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:09:17.146 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:09:17.165 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:09:17.166 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:09:17.166 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:09:17.543 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:09:17.632 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:09:29.060 +01:00 [INF] Executed DbCommand (427ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:09:29.490 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 12:09:29.509 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 11861.681ms
+2023-04-20 12:09:29.512 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:09:29.537 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:09:29.538 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:14:29 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:09:29.552 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:09:29.581 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 11:09:29 GMT
+2023-04-20 12:09:29.582 +01:00 [INF] Generating Vary header.
+2023-04-20 12:09:29.582 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:09:29.659 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 12607.3740ms
+2023-04-20 12:09:44.975 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 12:09:44.983 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:09:44.984 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 8.8457ms
+2023-04-20 12:09:44.995 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 12:09:44.995 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:09:44.995 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:09:44.995 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:09:44.996 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:09:44.996 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:09:44.996 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:09:44.996 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:09:44.999 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:09:45.006 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:09:48.090 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:09:48.114 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 12:09:48.200 +01:00 [WRN] Invalid password for user.
+2023-04-20 12:09:48.201 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 12:09:48.205 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:09:48.467 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 12:09:48.819 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 12:09:49.026 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 4020.3785ms
+2023-04-20 12:09:49.026 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:09:49.027 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:09:49.027 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:14:49 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:09:49.027 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:09:49.029 +01:00 [INF] Validation headers generated. ETag: Strong, "B2563E128A3AC569A32FD5902403F0BB". Last-Modified: Thu, 20 Apr 2023 11:09:49 GMT
+2023-04-20 12:09:49.029 +01:00 [INF] Generating Vary header.
+2023-04-20 12:09:49.029 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:09:49.035 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 4040.2620ms
+2023-04-20 12:11:34.418 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 12:11:34.425 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:11:34.476 +01:00 [INF] No cached response available for this request.
+2023-04-20 12:11:34.478 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:11:34.481 +01:00 [INF] No saved response found in store.
+2023-04-20 12:11:34.481 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:11:34.481 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:11:34.481 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:11:34.481 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:11:34.485 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-20 12:11:34.491 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-04-20 12:11:34.598 +01:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2023-04-20 12:11:34.646 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 12:11:34.660 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 169.5372ms
+2023-04-20 12:11:34.660 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-04-20 12:11:34.660 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:11:34.661 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:16:34 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:11:34.661 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:11:34.661 +01:00 [INF] Validation headers generated. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26". Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT
+2023-04-20 12:11:34.661 +01:00 [INF] Generating Vary header.
+2023-04-20 12:11:34.661 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:11:34.665 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 12:11:34.674 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 353 application/json;+charset=utf-8 258.2920ms
+2023-04-20 12:11:45.539 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 12:11:45.539 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:11:45.540 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.5135ms
+2023-04-20 12:11:45.542 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 12:11:45.543 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:11:45.543 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:11:45.543 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:11:45.543 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:11:45.543 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:11:45.543 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:11:45.543 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:11:45.543 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:11:45.543 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:11:47.522 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:11:47.524 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 12:11:47.524 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 1980.8837ms
+2023-04-20 12:11:47.524 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:11:47.525 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:11:47.525 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:16:47 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:11:47.525 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:11:47.525 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 11:11:47 GMT
+2023-04-20 12:11:47.525 +01:00 [INF] Generating Vary header.
+2023-04-20 12:11:47.525 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:11:47.526 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 1983.9593ms
+2023-04-20 12:12:01.358 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 12:12:01.359 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:12:01.359 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.5176ms
+2023-04-20 12:12:01.364 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 12:12:01.364 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:12:01.364 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:12:01.364 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:12:01.364 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:12:01.364 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:12:01.364 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:12:01.364 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:12:01.365 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:12:01.365 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:12:03.408 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:12:03.418 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 12:12:03.441 +01:00 [WRN] Invalid password for user.
+2023-04-20 12:12:03.442 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 12:12:03.449 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:12:03.463 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 12:12:03.465 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 12:12:03.465 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2100.0889ms
+2023-04-20 12:12:03.465 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:12:03.465 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:12:03.465 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:17:03 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:12:03.465 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:12:03.466 +01:00 [INF] Validation headers generated. ETag: Strong, "1E8F7F64C3BC0A55A4898E63949CF9C3". Last-Modified: Thu, 20 Apr 2023 11:12:03 GMT
+2023-04-20 12:12:03.466 +01:00 [INF] Generating Vary header.
+2023-04-20 12:12:03.466 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:12:03.466 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2102.6374ms
+2023-04-20 12:26:30.389 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 12:26:30.389 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:26:30.390 +01:00 [INF] No cached response available for this request.
+2023-04-20 12:26:30.390 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:26:30.403 +01:00 [INF] Checking If-None-Match.
+2023-04-20 12:26:30.403 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 12:26:30.404 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 12:26:30.406 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 12:26:30.414 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 12:26:30.414 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 12:26:30.415 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 25.7550ms
+2023-04-20 12:26:47.153 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 12:26:47.153 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:26:47.154 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.5046ms
+2023-04-20 12:26:47.160 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 12:26:47.161 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:26:47.161 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:26:47.161 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:26:47.161 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:26:47.161 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:26:47.161 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:26:47.161 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:26:47.162 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:26:47.162 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:26:49.334 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:26:49.335 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 12:26:49.335 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2172.9544ms
+2023-04-20 12:26:49.335 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:26:49.335 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:26:49.335 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:31:49 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:26:49.335 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:26:49.335 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 11:26:49 GMT
+2023-04-20 12:26:49.335 +01:00 [INF] Generating Vary header.
+2023-04-20 12:26:49.335 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:26:49.336 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2176.5065ms
+2023-04-20 12:26:59.540 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 12:26:59.540 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:26:59.541 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.7392ms
+2023-04-20 12:26:59.547 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 12:26:59.547 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:26:59.547 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:26:59.547 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:26:59.548 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:26:59.548 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:26:59.548 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:26:59.548 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:26:59.548 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:26:59.548 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:27:02.048 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:27:02.055 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 12:27:02.067 +01:00 [WRN] Invalid password for user.
+2023-04-20 12:27:02.067 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 12:27:02.069 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:27:02.076 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 12:27:02.077 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 12:27:02.078 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2529.7608ms
+2023-04-20 12:27:02.078 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:27:02.078 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:27:02.078 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:32:02 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:27:02.078 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:27:02.078 +01:00 [INF] Validation headers generated. ETag: Strong, "41AC51E400526C6627F35D13F82426BD". Last-Modified: Thu, 20 Apr 2023 11:27:02 GMT
+2023-04-20 12:27:02.078 +01:00 [INF] Generating Vary header.
+2023-04-20 12:27:02.078 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:27:02.079 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2532.4042ms
+2023-04-20 12:53:59.359 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 12:53:59.360 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:53:59.361 +01:00 [INF] No cached response available for this request.
+2023-04-20 12:53:59.361 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:53:59.361 +01:00 [INF] Checking If-None-Match.
+2023-04-20 12:53:59.361 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 12:53:59.361 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 12:53:59.361 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 12:53:59.361 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 12:53:59.361 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 12:53:59.361 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.2444ms
+2023-04-20 12:54:54.919 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 12:54:54.920 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:54:54.921 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 2.2550ms
+2023-04-20 12:54:54.925 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 12:54:54.926 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:54:54.926 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:54:54.926 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:54:54.926 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:54:54.926 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:54:54.926 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:54:54.926 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:54:54.931 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:54:54.931 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:54:57.206 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:54:57.207 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 12:54:57.207 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2275.733ms
+2023-04-20 12:54:57.207 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 12:54:57.207 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:54:57.207 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 11:59:57 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:54:57.207 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:54:57.207 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 11:54:57 GMT
+2023-04-20 12:54:57.207 +01:00 [INF] Generating Vary header.
+2023-04-20 12:54:57.207 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:54:57.208 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2282.4152ms
+2023-04-20 12:55:11.230 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 12:55:11.230 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:55:11.230 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.4707ms
+2023-04-20 12:55:11.232 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 12:55:11.232 +01:00 [INF] CORS policy execution successful.
+2023-04-20 12:55:11.233 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 12:55:11.233 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 12:55:11.233 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 12:55:11.233 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 12:55:11.233 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 12:55:11.233 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 12:55:11.233 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:55:11.233 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 12:55:14.680 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:55:14.688 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 12:55:14.699 +01:00 [WRN] Invalid password for user.
+2023-04-20 12:55:14.699 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 12:55:14.703 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 12:55:14.709 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 12:55:14.710 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 12:55:14.710 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 3477.1487ms
+2023-04-20 12:55:14.710 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 12:55:14.710 +01:00 [INF] Generating expiration headers.
+2023-04-20 12:55:14.710 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 12:00:14 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 12:55:14.710 +01:00 [INF] Generating Validation headers.
+2023-04-20 12:55:14.710 +01:00 [INF] Validation headers generated. ETag: Strong, "3D686BF1E732F71B6523AD032C73442B". Last-Modified: Thu, 20 Apr 2023 11:55:14 GMT
+2023-04-20 12:55:14.710 +01:00 [INF] Generating Vary header.
+2023-04-20 12:55:14.710 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 12:55:14.711 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 3478.7555ms
+2023-04-20 13:40:41.599 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/cd35a2c9-4867-40f1-8a76-405fe141eed4 - -
+2023-04-20 13:40:41.599 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 13:40:41.600 +01:00 [INF] CORS policy execution successful.
+2023-04-20 13:40:41.604 +01:00 [INF] No cached response available for this request.
+2023-04-20 13:40:41.604 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 13:40:41.605 +01:00 [INF] CORS policy execution successful.
+2023-04-20 13:40:41.605 +01:00 [INF] Checking If-None-Match.
+2023-04-20 13:40:41.610 +01:00 [INF] No cached response available for this request.
+2023-04-20 13:40:41.611 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 13:40:41.611 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 13:40:41.611 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 13:40:41.611 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 13:40:41.611 +01:00 [INF] No saved response found in store.
+2023-04-20 13:40:41.611 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 13:40:41.611 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 13:40:41.612 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 13:40:41.612 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 13:40:41.614 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 13:40:41.614 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 13:40:41.614 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 16.2372ms
+2023-04-20 13:40:41.614 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-04-20 13:40:41.628 +01:00 [INF] Route matched with {action = "GetUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 13:40:41.792 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-04-20 13:40:41.794 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 13:40:41.797 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.GetUser (BuyNG) in 168.3298ms
+2023-04-20 13:40:41.797 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-04-20 13:40:41.797 +01:00 [INF] Generating expiration headers.
+2023-04-20 13:40:41.797 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 12:45:41 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 13:40:41.797 +01:00 [INF] Generating Validation headers.
+2023-04-20 13:40:41.797 +01:00 [INF] Validation headers generated. ETag: Strong, "25DD02838927B4C2845DBAA9119CFF64". Last-Modified: Thu, 20 Apr 2023 12:40:41 GMT
+2023-04-20 13:40:41.797 +01:00 [INF] Generating Vary header.
+2023-04-20 13:40:41.797 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 13:40:41.798 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 13:40:41.798 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/cd35a2c9-4867-40f1-8a76-405fe141eed4 - - - 200 221 application/json;+charset=utf-8 200.6002ms
+2023-04-20 13:55:42.985 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 13:55:42.986 +01:00 [INF] CORS policy execution successful.
+2023-04-20 13:55:42.986 +01:00 [INF] No cached response available for this request.
+2023-04-20 13:55:42.986 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 13:55:42.986 +01:00 [INF] Checking If-None-Match.
+2023-04-20 13:55:42.986 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 13:55:42.987 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 13:55:42.987 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 13:55:42.987 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 13:55:42.987 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 13:55:42.989 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.4357ms
+2023-04-20 14:10:47.460 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 14:10:47.460 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:10:47.461 +01:00 [INF] No cached response available for this request.
+2023-04-20 14:10:47.461 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:10:47.461 +01:00 [INF] Checking If-None-Match.
+2023-04-20 14:10:47.461 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:10:47.461 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:10:47.461 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 14:10:47.461 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 14:10:47.462 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 14:10:47.464 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 4.7245ms
+2023-04-20 14:11:08.122 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 14:11:08.122 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:11:08.122 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.6613ms
+2023-04-20 14:11:08.126 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 14:11:08.126 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:11:08.126 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:11:08.127 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:11:08.127 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:11:08.127 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:11:08.127 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:11:08.127 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:11:08.131 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:11:08.131 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:11:10.695 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:11:10.696 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 14:11:10.696 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2565.2652ms
+2023-04-20 14:11:10.696 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:11:10.697 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:11:10.697 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:16:10 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:11:10.697 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:11:10.697 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 13:11:10 GMT
+2023-04-20 14:11:10.697 +01:00 [INF] Generating Vary header.
+2023-04-20 14:11:10.697 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:11:10.698 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2571.7367ms
+2023-04-20 14:11:23.075 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 14:11:23.075 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:11:23.075 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.4800ms
+2023-04-20 14:11:23.079 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 14:11:23.079 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:11:23.079 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:11:23.079 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:11:23.080 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:11:23.081 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:11:23.081 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:11:23.081 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:11:23.082 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:11:23.082 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:11:26.528 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:11:26.541 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 14:11:26.559 +01:00 [WRN] Invalid password for user.
+2023-04-20 14:11:26.559 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 14:11:26.562 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:11:26.571 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 14:11:26.572 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 14:11:26.572 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 3489.7087ms
+2023-04-20 14:11:26.572 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:11:26.572 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:11:26.572 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:16:26 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:11:26.572 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:11:26.572 +01:00 [INF] Validation headers generated. ETag: Strong, "4BB33D3D47AE1F4483F0910005A5CC4B". Last-Modified: Thu, 20 Apr 2023 13:11:26 GMT
+2023-04-20 14:11:26.572 +01:00 [INF] Generating Vary header.
+2023-04-20 14:11:26.572 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:11:26.573 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 3494.4202ms
+2023-04-20 14:16:27.869 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 14:16:27.895 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:16:27.900 +01:00 [INF] No cached response available for this request.
+2023-04-20 14:16:27.901 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:16:27.901 +01:00 [INF] Checking If-None-Match.
+2023-04-20 14:16:27.901 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:16:27.901 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:16:27.901 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 14:16:27.902 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 14:16:27.902 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 14:16:27.909 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 42.4224ms
+2023-04-20 14:16:52.182 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 14:16:52.183 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:16:52.183 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.5751ms
+2023-04-20 14:16:52.186 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 14:16:52.186 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:16:52.186 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:16:52.186 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:16:52.186 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:16:52.187 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:16:52.187 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:16:52.187 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:16:52.188 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:16:52.189 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:16:54.557 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:16:54.557 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 14:16:54.557 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2368.4107ms
+2023-04-20 14:16:54.557 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:16:54.557 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:16:54.557 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:21:54 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:16:54.557 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:16:54.558 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 13:16:54 GMT
+2023-04-20 14:16:54.558 +01:00 [INF] Generating Vary header.
+2023-04-20 14:16:54.558 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:16:54.558 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2372.3207ms
+2023-04-20 14:17:05.112 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 14:17:05.112 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:17:05.112 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.6311ms
+2023-04-20 14:17:05.115 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 14:17:05.115 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:17:05.115 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:17:05.115 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:17:05.115 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:17:05.115 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:17:05.115 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:17:05.115 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:17:05.116 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:17:05.116 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:17:07.865 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:17:07.869 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 14:17:07.879 +01:00 [WRN] Invalid password for user.
+2023-04-20 14:17:07.879 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 14:17:07.884 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:17:07.906 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 14:17:07.906 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 14:17:07.907 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2791.0889ms
+2023-04-20 14:17:07.907 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:17:07.907 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:17:07.907 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:22:07 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:17:07.907 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:17:07.907 +01:00 [INF] Validation headers generated. ETag: Strong, "0E727CA08FC455424DA117B30EAB0606". Last-Modified: Thu, 20 Apr 2023 13:17:07 GMT
+2023-04-20 14:17:07.907 +01:00 [INF] Generating Vary header.
+2023-04-20 14:17:07.907 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:17:07.908 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2793.0565ms
+2023-04-20 14:21:29.510 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 14:21:29.512 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:21:29.544 +01:00 [INF] No cached response available for this request.
+2023-04-20 14:21:29.545 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:21:29.546 +01:00 [INF] Checking If-None-Match.
+2023-04-20 14:21:29.546 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:21:29.546 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:21:29.546 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 14:21:29.546 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 14:21:29.546 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 14:21:29.557 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 47.5816ms
+2023-04-20 14:21:47.439 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 14:21:47.439 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:21:47.439 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.5575ms
+2023-04-20 14:21:47.443 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 14:21:47.443 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:21:47.443 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:21:47.443 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:21:47.443 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:21:47.443 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:21:47.443 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:21:47.443 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:21:47.444 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:21:47.444 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:21:53.224 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:21:53.224 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 14:21:53.225 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 5780.5475ms
+2023-04-20 14:21:53.225 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:21:53.225 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:21:53.225 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:26:53 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:21:53.225 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:21:53.225 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 13:21:53 GMT
+2023-04-20 14:21:53.225 +01:00 [INF] Generating Vary header.
+2023-04-20 14:21:53.225 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:21:53.225 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 5782.5659ms
+2023-04-20 14:22:02.305 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 14:22:02.305 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:22:02.305 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.6022ms
+2023-04-20 14:22:02.309 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 14:22:02.309 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:22:02.309 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:22:02.309 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:22:02.309 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:22:02.309 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:22:02.309 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:22:02.309 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:22:02.310 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:22:02.310 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:22:07.299 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:22:07.311 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 14:22:07.326 +01:00 [WRN] Invalid password for user.
+2023-04-20 14:22:07.326 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 14:22:07.328 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:22:07.342 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 14:22:07.343 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 14:22:07.343 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 5033.0357ms
+2023-04-20 14:22:07.343 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:22:07.343 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:22:07.343 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:27:07 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:22:07.343 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:22:07.343 +01:00 [INF] Validation headers generated. ETag: Strong, "0C58A8AC2464D18EC94F87528B02C7FD". Last-Modified: Thu, 20 Apr 2023 13:22:07 GMT
+2023-04-20 14:22:07.343 +01:00 [INF] Generating Vary header.
+2023-04-20 14:22:07.343 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:22:07.344 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 5035.2638ms
+2023-04-20 14:25:22.410 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 14:25:22.410 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:25:22.411 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.8826ms
+2023-04-20 14:25:22.414 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 14:25:22.414 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:25:22.415 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:25:22.415 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:25:22.415 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:25:22.415 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:25:22.415 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:25:22.415 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:25:22.416 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:25:22.416 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:25:25.194 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:25:25.194 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 14:25:25.194 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2778.4424ms
+2023-04-20 14:25:25.194 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:25:25.194 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:25:25.194 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:30:25 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:25:25.194 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:25:25.195 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 13:25:25 GMT
+2023-04-20 14:25:25.195 +01:00 [INF] Generating Vary header.
+2023-04-20 14:25:25.195 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:25:25.195 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2781.2271ms
+2023-04-20 14:25:40.367 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 14:25:40.368 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:25:40.368 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.5468ms
+2023-04-20 14:25:40.371 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 14:25:40.371 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:25:40.371 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:25:40.371 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:25:40.371 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:25:40.371 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:25:40.372 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:25:40.372 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:25:40.373 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:25:40.373 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:25:42.581 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:25:42.588 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 14:25:42.607 +01:00 [WRN] Invalid password for user.
+2023-04-20 14:25:42.607 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 14:25:42.609 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:25:42.614 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 14:25:42.615 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 14:25:42.615 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2241.4857ms
+2023-04-20 14:25:42.615 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:25:42.615 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:25:42.615 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:30:42 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:25:42.615 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:25:42.615 +01:00 [INF] Validation headers generated. ETag: Strong, "0CDC1DE259F54B107058303DE99FFCCC". Last-Modified: Thu, 20 Apr 2023 13:25:42 GMT
+2023-04-20 14:25:42.615 +01:00 [INF] Generating Vary header.
+2023-04-20 14:25:42.615 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:25:42.617 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2246.1269ms
+2023-04-20 14:36:47.130 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 14:36:47.130 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:36:47.132 +01:00 [INF] No cached response available for this request.
+2023-04-20 14:36:47.133 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:36:47.133 +01:00 [INF] Checking If-None-Match.
+2023-04-20 14:36:47.133 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:36:47.133 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 14:36:47.133 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 14:36:47.133 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/cd35a2c9-4867-40f1-8a76-405fe141eed4 - -
+2023-04-20 14:36:47.133 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 14:36:47.133 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 14:36:47.133 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:36:47.133 +01:00 [INF] No cached response available for this request.
+2023-04-20 14:36:47.134 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:36:47.134 +01:00 [INF] Checking If-None-Match.
+2023-04-20 14:36:47.134 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 3.8852ms
+2023-04-20 14:36:47.134 +01:00 [INF] Checking If-None-Match: "25DD02838927B4C2845DBAA9119CFF64".
+2023-04-20 14:36:47.134 +01:00 [INF] ETag valid: "25DD02838927B4C2845DBAA9119CFF64".
+2023-04-20 14:36:47.134 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 14:36:47.134 +01:00 [INF] Generation done. ETag: Strong, "25DD02838927B4C2845DBAA9119CFF64", Last-Modified: Thu, 20 Apr 2023 12:40:41 GMT.
+2023-04-20 14:36:47.134 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 14:36:47.134 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/cd35a2c9-4867-40f1-8a76-405fe141eed4 - - - 304 - - 0.7480ms
+2023-04-20 14:40:56.586 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 14:40:56.586 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:40:56.589 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 1.1469ms
+2023-04-20 14:40:56.597 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 14:40:56.597 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:40:56.597 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:40:56.597 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:40:56.597 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:40:56.597 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:40:56.597 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:40:56.597 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:40:56.603 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:40:56.603 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:40:58.484 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:40:58.484 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 14:40:58.484 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 1881.1238ms
+2023-04-20 14:40:58.484 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 14:40:58.484 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:40:58.484 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:45:58 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:40:58.484 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:40:58.484 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 13:40:58 GMT
+2023-04-20 14:40:58.484 +01:00 [INF] Generating Vary header.
+2023-04-20 14:40:58.484 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:40:58.485 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 1888.1908ms
+2023-04-20 14:41:07.695 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 14:41:07.696 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:41:07.696 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.3719ms
+2023-04-20 14:41:07.698 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 14:41:07.698 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:41:07.698 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:41:07.698 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:41:07.698 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:41:07.698 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:41:07.698 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:41:07.698 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:41:07.698 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:41:07.698 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 14:41:09.975 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:41:09.981 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 14:41:09.992 +01:00 [WRN] Invalid password for user.
+2023-04-20 14:41:09.992 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 14:41:09.994 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 14:41:09.998 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 14:41:09.999 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 14:41:09.999 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2300.3522ms
+2023-04-20 14:41:09.999 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 14:41:09.999 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:41:09.999 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:46:09 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:41:09.999 +01:00 [INF] Generating Validation headers.
+2023-04-20 14:41:09.999 +01:00 [INF] Validation headers generated. ETag: Strong, "1CE459F2C97A514BF29F5C1D5F262552". Last-Modified: Thu, 20 Apr 2023 13:41:09 GMT
+2023-04-20 14:41:09.999 +01:00 [INF] Generating Vary header.
+2023-04-20 14:41:09.999 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:41:10.000 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2301.4982ms
+2023-04-20 14:42:05.963 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-04-20 14:42:05.963 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:42:05.963 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 0.3944ms
+2023-04-20 14:42:05.966 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product application/json 143896
+2023-04-20 14:42:05.967 +01:00 [INF] CORS policy execution successful.
+2023-04-20 14:42:05.967 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 14:42:05.967 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 14:42:05.967 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 14:42:05.967 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 14:42:05.967 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 14:42:05.967 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 14:42:05.967 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 14:42:05.981 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-04-20 14:42:06.209 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-20 14:42:06.302 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 320.6727ms
+2023-04-20 14:42:06.302 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 14:42:06.302 +01:00 [INF] Generating expiration headers.
+2023-04-20 14:42:06.302 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 13:47:06 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 14:42:06.302 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-20 14:42:06.302 +01:00 [INF] Generating Vary header.
+2023-04-20 14:42:06.302 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 14:42:06.320 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product application/json 143896 - 400 144159 application/problem+json;+charset=utf-8 354.1032ms
+2023-04-20 15:04:24.455 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 15:04:24.455 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:04:24.455 +01:00 [INF] No cached response available for this request.
+2023-04-20 15:04:24.455 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:04:24.456 +01:00 [INF] Checking If-None-Match.
+2023-04-20 15:04:24.456 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 15:04:24.456 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 15:04:24.456 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 15:04:24.456 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 15:04:24.456 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 15:04:24.457 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.7363ms
+2023-04-20 15:04:45.154 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 15:04:45.154 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:04:45.155 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.4164ms
+2023-04-20 15:04:45.159 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 15:04:45.159 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:04:45.159 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:04:45.159 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:04:45.159 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:04:45.159 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:04:45.159 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:04:45.159 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:04:45.159 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:04:45.159 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:04:47.553 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:04:47.558 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 15:04:47.558 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2398.6012ms
+2023-04-20 15:04:47.560 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:04:47.560 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:04:47.560 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:09:47 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:04:47.560 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:04:47.560 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 14:04:47 GMT
+2023-04-20 15:04:47.560 +01:00 [INF] Generating Vary header.
+2023-04-20 15:04:47.560 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:04:47.561 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2402.3031ms
+2023-04-20 15:04:57.200 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 15:04:57.200 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:04:57.200 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.3516ms
+2023-04-20 15:04:57.202 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 15:04:57.203 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:04:57.203 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:04:57.203 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:04:57.203 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:04:57.203 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:04:57.203 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:04:57.203 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:04:57.203 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:04:57.203 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:04:59.284 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:04:59.289 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 15:04:59.298 +01:00 [WRN] Invalid password for user.
+2023-04-20 15:04:59.298 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 15:04:59.300 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:04:59.317 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 15:04:59.317 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 15:04:59.318 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2114.6564ms
+2023-04-20 15:04:59.318 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:04:59.318 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:04:59.318 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:09:59 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:04:59.318 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:04:59.318 +01:00 [INF] Validation headers generated. ETag: Strong, "56DE3469CB599407C66F3D4D5334AA9E". Last-Modified: Thu, 20 Apr 2023 14:04:59 GMT
+2023-04-20 15:04:59.318 +01:00 [INF] Generating Vary header.
+2023-04-20 15:04:59.318 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:04:59.319 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2116.1988ms
+2023-04-20 15:37:14.473 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 15:37:14.473 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:37:14.473 +01:00 [INF] No cached response available for this request.
+2023-04-20 15:37:14.473 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:37:14.473 +01:00 [INF] Checking If-None-Match.
+2023-04-20 15:37:14.473 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 15:37:14.474 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 15:37:14.474 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 15:37:14.474 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 15:37:14.475 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 15:37:14.475 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 2.3522ms
+2023-04-20 15:37:29.150 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 15:37:29.150 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:37:29.151 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.3116ms
+2023-04-20 15:37:29.152 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 15:37:29.152 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:37:29.153 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:37:29.153 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:37:29.153 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:37:29.153 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:37:29.153 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:37:29.153 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:37:29.153 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:37:29.153 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:37:31.749 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:37:31.749 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 15:37:31.749 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2596.3573ms
+2023-04-20 15:37:31.749 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:37:31.750 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:37:31.750 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:42:31 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:37:31.750 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:37:31.750 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 14:37:31 GMT
+2023-04-20 15:37:31.750 +01:00 [INF] Generating Vary header.
+2023-04-20 15:37:31.750 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:37:31.750 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2597.8563ms
+2023-04-20 15:37:41.261 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 15:37:41.262 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:37:41.262 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.3320ms
+2023-04-20 15:37:41.264 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 15:37:41.264 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:37:41.265 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:37:41.265 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:37:41.265 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:37:41.265 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:37:41.265 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:37:41.265 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:37:41.265 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:37:41.265 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:37:46.734 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:37:46.743 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 15:37:46.752 +01:00 [WRN] Invalid password for user.
+2023-04-20 15:37:46.752 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 15:37:46.753 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:37:46.767 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 15:37:46.771 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 15:37:46.771 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 5505.9303ms
+2023-04-20 15:37:46.773 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:37:46.773 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:37:46.773 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:42:46 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:37:46.773 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:37:46.773 +01:00 [INF] Validation headers generated. ETag: Strong, "E6F36BC64CA172406B1E2C0266949821". Last-Modified: Thu, 20 Apr 2023 14:37:46 GMT
+2023-04-20 15:37:46.773 +01:00 [INF] Generating Vary header.
+2023-04-20 15:37:46.773 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:37:46.774 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 5509.7172ms
+2023-04-20 15:41:09.124 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 15:41:09.125 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:41:09.125 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.3206ms
+2023-04-20 15:41:09.127 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 15:41:09.127 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:41:09.127 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:41:09.127 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:41:09.127 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:41:09.127 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:41:09.127 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:41:09.127 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:41:09.127 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:41:09.127 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:41:11.602 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:41:11.603 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 15:41:11.603 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2475.2917ms
+2023-04-20 15:41:11.603 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 15:41:11.603 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:41:11.603 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:46:11 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:41:11.603 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:41:11.603 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 14:41:11 GMT
+2023-04-20 15:41:11.603 +01:00 [INF] Generating Vary header.
+2023-04-20 15:41:11.603 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:41:11.603 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2476.7543ms
+2023-04-20 15:41:25.787 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 15:41:25.787 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:41:25.787 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.4232ms
+2023-04-20 15:41:25.790 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 15:41:25.790 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:41:25.790 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:41:25.790 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:41:25.790 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:41:25.790 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:41:25.790 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:41:25.790 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:41:25.790 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:41:25.790 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 15:41:28.308 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:41:28.311 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 15:41:28.319 +01:00 [WRN] Invalid password for user.
+2023-04-20 15:41:28.319 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 15:41:28.321 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 15:41:28.324 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 15:41:28.325 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 15:41:28.325 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2534.4971ms
+2023-04-20 15:41:28.325 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 15:41:28.325 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:41:28.325 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:46:28 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:41:28.325 +01:00 [INF] Generating Validation headers.
+2023-04-20 15:41:28.325 +01:00 [INF] Validation headers generated. ETag: Strong, "9193E136EF6DDBD8B8C31F678970EAD9". Last-Modified: Thu, 20 Apr 2023 14:41:28 GMT
+2023-04-20 15:41:28.325 +01:00 [INF] Generating Vary header.
+2023-04-20 15:41:28.325 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:41:28.326 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2536.1059ms
+2023-04-20 15:42:36.459 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-04-20 15:42:36.459 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:42:36.459 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 0.5075ms
+2023-04-20 15:42:36.462 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product application/json 134
+2023-04-20 15:42:36.462 +01:00 [INF] CORS policy execution successful.
+2023-04-20 15:42:36.462 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 15:42:36.462 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 15:42:36.462 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 15:42:36.462 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 15:42:36.462 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 15:42:36.462 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 15:42:36.462 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 15:42:36.463 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-04-20 15:42:36.475 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-20 15:42:36.475 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 12.152ms
+2023-04-20 15:42:36.475 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 15:42:36.475 +01:00 [INF] Generating expiration headers.
+2023-04-20 15:42:36.475 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 14:47:36 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 15:42:36.475 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-20 15:42:36.475 +01:00 [INF] Generating Vary header.
+2023-04-20 15:42:36.475 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 15:42:36.475 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product application/json 134 - 400 458 application/problem+json;+charset=utf-8 13.7703ms
+2023-04-20 16:29:29.904 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 16:29:29.940 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:29:29.940 +01:00 [INF] No cached response available for this request.
+2023-04-20 16:29:29.940 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 16:29:29.943 +01:00 [INF] Checking If-None-Match.
+2023-04-20 16:29:29.946 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 16:29:29.947 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 16:29:29.947 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 16:29:29.947 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 16:29:29.948 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 16:29:29.948 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 45.1443ms
+2023-04-20 16:46:59.546 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-04-20 16:46:59.547 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:46:59.547 +01:00 [INF] No cached response available for this request.
+2023-04-20 16:46:59.547 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 16:46:59.547 +01:00 [INF] Checking If-None-Match.
+2023-04-20 16:46:59.547 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 16:46:59.547 +01:00 [INF] ETag valid: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-04-20 16:46:59.548 +01:00 [INF] Generating 304 - Not Modified.
+2023-04-20 16:46:59.549 +01:00 [INF] Generation done. ETag: Strong, "A4E2126B3D034832E2F4F9437A8A5A26", Last-Modified: Thu, 20 Apr 2023 11:11:34 GMT.
+2023-04-20 16:46:59.549 +01:00 [INF] The response could not be cached for this request.
+2023-04-20 16:46:59.575 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 28.3996ms
+2023-04-20 16:47:56.744 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-04-20 16:47:56.744 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:47:56.744 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 0.2743ms
+2023-04-20 16:47:56.746 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-04-20 16:47:56.746 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:47:56.747 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 16:47:56.747 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 16:47:56.747 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 16:47:56.747 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 16:47:56.747 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 16:47:56.747 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 16:47:56.747 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 16:47:56.747 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 16:47:59.560 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 16:47:59.561 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-20 16:47:59.562 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 2814.2546ms
+2023-04-20 16:47:59.562 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-04-20 16:47:59.562 +01:00 [INF] Generating expiration headers.
+2023-04-20 16:47:59.562 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 15:52:59 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 16:47:59.562 +01:00 [INF] Generating Validation headers.
+2023-04-20 16:47:59.562 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Thu, 20 Apr 2023 15:47:59 GMT
+2023-04-20 16:47:59.562 +01:00 [INF] Generating Vary header.
+2023-04-20 16:47:59.562 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 16:47:59.562 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 2816.1658ms
+2023-04-20 16:48:10.252 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-04-20 16:48:10.252 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:48:10.252 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.3936ms
+2023-04-20 16:48:10.254 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 51
+2023-04-20 16:48:10.254 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:48:10.254 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 16:48:10.254 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 16:48:10.254 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 16:48:10.254 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 16:48:10.254 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 16:48:10.254 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 16:48:10.254 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 16:48:10.255 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-04-20 16:48:13.001 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 16:48:13.047 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-20 16:48:13.056 +01:00 [WRN] Invalid password for user.
+2023-04-20 16:48:13.056 +01:00 [WRN] User failed to provide the correct password.
+2023-04-20 16:48:13.057 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-20 16:48:13.063 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-20 16:48:13.064 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-20 16:48:13.064 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 2809.4862ms
+2023-04-20 16:48:13.064 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-04-20 16:48:13.064 +01:00 [INF] Generating expiration headers.
+2023-04-20 16:48:13.064 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 15:53:13 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 16:48:13.064 +01:00 [INF] Generating Validation headers.
+2023-04-20 16:48:13.064 +01:00 [INF] Validation headers generated. ETag: Strong, "1EC1D98487DF191D107D8C36407E0602". Last-Modified: Thu, 20 Apr 2023 15:48:13 GMT
+2023-04-20 16:48:13.064 +01:00 [INF] Generating Vary header.
+2023-04-20 16:48:13.064 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 16:48:13.065 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 51 - 202 600 application/json;+charset=utf-8 2810.9852ms
+2023-04-20 16:49:12.644 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryuN6yv9g9gg4GbhTz 682
+2023-04-20 16:49:12.645 +01:00 [INF] CORS policy execution successful.
+2023-04-20 16:49:12.645 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 16:49:12.645 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 16:49:12.645 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 16:49:12.645 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 16:49:12.645 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 16:49:12.645 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 16:49:12.651 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 16:49:12.651 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-04-20 16:49:12.795 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-04-20 16:49:12.808 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 153.4906ms
+2023-04-20 16:49:12.808 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 16:49:12.808 +01:00 [INF] Generating expiration headers.
+2023-04-20 16:49:12.808 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 15:54:12 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 16:49:12.808 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-20 16:49:12.808 +01:00 [INF] Generating Vary header.
+2023-04-20 16:49:12.808 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 16:49:12.808 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryuN6yv9g9gg4GbhTz 682 - 415 175 application/problem+json;+charset=utf-8 164.8550ms
+2023-04-20 16:53:50.839 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-04-20 16:53:50.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-04-20 16:53:50.866 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 24.9991ms
+2023-04-20 16:53:50.951 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.3586ms
+2023-04-20 16:53:51.024 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-04-20 16:53:51.090 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.1458ms
+2023-04-20 17:00:19.158 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-20 17:00:19.496 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-20 17:00:19.497 +01:00 [INF] Hosting environment: Development
+2023-04-20 17:00:19.497 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-04-20 17:00:19.542 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-04-20 17:00:20.276 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-04-20 17:00:20.281 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 743.4113ms
+2023-04-20 17:00:20.297 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-04-20 17:00:20.298 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 6.6837ms
+2023-04-20 17:00:20.356 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.0367ms
+2023-04-20 17:00:20.467 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-04-20 17:00:20.756 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.8593ms
+2023-04-20 17:00:45.938 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryuUqAJ7eCmasbR4HP 682
+2023-04-20 17:00:45.974 +01:00 [INF] CORS policy execution successful.
+2023-04-20 17:00:46.023 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 17:00:46.025 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 17:00:46.026 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 17:00:46.031 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 17:00:46.032 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 17:00:46.032 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 17:00:46.243 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 17:00:46.289 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-04-20 17:00:48.359 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-20 17:00:48.619 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 2324.0675ms
+2023-04-20 17:00:48.621 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 17:00:48.628 +01:00 [INF] Generating expiration headers.
+2023-04-20 17:00:48.628 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 16:05:48 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 17:00:48.634 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-20 17:00:48.634 +01:00 [INF] Generating Vary header.
+2023-04-20 17:00:48.634 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 17:00:48.647 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryuUqAJ7eCmasbR4HP 682 - 400 253 application/problem+json;+charset=utf-8 2709.8266ms
+2023-04-20 17:01:16.604 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundary1pnwod3XWpSURfkK 682
+2023-04-20 17:01:16.614 +01:00 [INF] CORS policy execution successful.
+2023-04-20 17:01:16.616 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-04-20 17:01:16.617 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-04-20 17:01:16.620 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-04-20 17:01:16.620 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-04-20 17:01:16.620 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-04-20 17:01:16.620 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-04-20 17:01:16.629 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 17:01:16.630 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-04-20 17:01:16.675 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-20 17:01:16.675 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 45.8712ms
+2023-04-20 17:01:16.675 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-04-20 17:01:16.676 +01:00 [INF] Generating expiration headers.
+2023-04-20 17:01:16.676 +01:00 [INF] Expiration headers generated. Expires: Thu, 20 Apr 2023 16:06:16 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-04-20 17:01:16.676 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-04-20 17:01:16.676 +01:00 [INF] Generating Vary header.
+2023-04-20 17:01:16.676 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-04-20 17:01:16.676 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundary1pnwod3XWpSURfkK 682 - 400 253 application/problem+json;+charset=utf-8 72.3473ms

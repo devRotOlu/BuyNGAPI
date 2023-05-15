@@ -1,0 +1,1547 @@
+2023-05-08 02:52:13.425 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 02:52:14.221 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 02:52:14.222 +01:00 [INF] Hosting environment: Development
+2023-05-08 02:52:14.223 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 02:52:14.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 02:52:16.690 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 02:52:16.764 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 02:52:16.766 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2295.1406ms
+2023-05-08 02:52:16.899 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 203.6368ms
+2023-05-08 02:52:17.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 383.4746ms
+2023-05-08 02:52:17.336 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 02:52:18.082 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 746.0428ms
+2023-05-08 02:54:13.301 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 02:54:13.484 +01:00 [INF] CORS policy execution successful.
+2023-05-08 02:54:13.508 +01:00 [INF] No cached response available for this request.
+2023-05-08 02:54:13.639 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 02:54:13.667 +01:00 [INF] No saved response found in store.
+2023-05-08 02:54:13.667 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 02:54:13.680 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 02:54:13.680 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 02:54:13.680 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 02:54:15.083 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 02:54:15.192 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 02:54:22.501 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 7294.9102ms
+2023-05-08 02:54:22.513 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 02:54:22.521 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The expression 'products.AsQueryable().Select(product => product.ImageUrls)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|32_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BuyNG.Core.Repository.GenericRepository`1.GetAll[T1,T2](Expression`1 expression, Expression`1 includes, Expression`1 alsoIncludes) in C:\Users\HP\Desktop\C# project\BuyNG.Core\Repository\GenericRepository.cs:line 102
+   at BuyNG.Controllers.ProductCategoryController.GetCategories() in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductCategoryController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 02:54:22.708 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)
+2023-05-08 02:54:23.278 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 500 - application/json 9977.4555ms
+2023-05-08 02:57:44.554 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 02:57:45.166 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 02:57:45.167 +01:00 [INF] Hosting environment: Development
+2023-05-08 02:57:45.167 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 02:57:45.270 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 02:57:46.892 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 02:57:46.905 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1649.7500ms
+2023-05-08 02:57:46.934 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 02:57:46.938 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 36.7772ms
+2023-05-08 02:57:47.090 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 156.4226ms
+2023-05-08 02:57:47.447 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 02:57:48.134 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 687.6048ms
+2023-05-08 02:58:29.560 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 02:58:29.610 +01:00 [INF] CORS policy execution successful.
+2023-05-08 02:58:29.622 +01:00 [INF] No cached response available for this request.
+2023-05-08 02:58:29.699 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 02:58:29.703 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 02:58:29.703 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 02:58:29.711 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 02:58:29.711 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 02:58:29.712 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 02:58:30.163 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 02:58:30.241 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 02:58:34.654 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 4399.9799ms
+2023-05-08 02:58:34.663 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 02:58:34.680 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'expression')
+   at System.Dynamic.Utils.ContractUtils.RequiresNotNull(Object value, String paramName, Int32 index)
+   at System.Dynamic.Utils.ExpressionUtils.RequiresCanRead(Expression expression, String paramName, Int32 idx)
+   at System.Linq.Expressions.Expression.Quote(Expression expression)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ThenInclude[TEntity,TPreviousProperty,TProperty](IIncludableQueryable`2 source, Expression`1 navigationPropertyPath)
+   at BuyNG.Core.Repository.GenericRepository`1.GetAll[T1,T2](Expression`1 expression, Expression`1 includes, Expression`1 alsoIncludes) in C:\Users\HP\Desktop\C# project\BuyNG.Core\Repository\GenericRepository.cs:line 0
+   at BuyNG.Controllers.ProductCategoryController.GetCategories() in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductCategoryController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 02:58:34.793 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)
+2023-05-08 02:58:35.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 500 - application/json 5553.8558ms
+2023-05-08 03:00:36.910 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 03:00:37.476 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 03:00:37.477 +01:00 [INF] Hosting environment: Development
+2023-05-08 03:00:37.477 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 03:00:37.541 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 03:00:39.283 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 03:00:39.286 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1755.1934ms
+2023-05-08 03:00:39.296 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 03:00:39.337 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 46.0617ms
+2023-05-08 03:00:39.436 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.5318ms
+2023-05-08 03:00:39.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 03:00:40.258 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 642.5061ms
+2023-05-08 03:01:06.546 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 03:01:06.628 +01:00 [INF] CORS policy execution successful.
+2023-05-08 03:01:06.643 +01:00 [INF] No cached response available for this request.
+2023-05-08 03:01:06.760 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 03:01:06.764 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 03:01:06.764 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 03:01:06.778 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 03:01:06.778 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 03:01:06.778 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 03:01:07.279 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 03:01:07.393 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 03:01:16.934 +01:00 [INF] Executed DbCommand (401ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity]
+FROM [ProductCategories] AS [p]
+LEFT JOIN [Products] AS [p0] ON [p].[Id] = [p0].[CategoryId]
+ORDER BY [p].[Id]
+2023-05-08 03:01:17.319 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 03:01:17.811 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 10405.4584ms
+2023-05-08 03:01:17.814 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 03:01:17.834 +01:00 [INF] Generating expiration headers.
+2023-05-08 03:01:17.835 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 02:06:17 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 03:01:17.848 +01:00 [INF] Generating Validation headers.
+2023-05-08 03:01:17.914 +01:00 [INF] Validation headers generated. ETag: Strong, "2B2948D2433EBA17850AA2694276ACF6". Last-Modified: Mon, 08 May 2023 02:01:17 GMT
+2023-05-08 03:01:17.916 +01:00 [INF] Generating Vary header.
+2023-05-08 03:01:17.916 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 03:01:17.941 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 03:01:17.997 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 1315 application/json;+charset=utf-8 11450.5753ms
+2023-05-08 03:09:35.129 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 03:09:35.144 +01:00 [INF] CORS policy execution successful.
+2023-05-08 03:09:35.164 +01:00 [INF] No cached response available for this request.
+2023-05-08 03:09:35.165 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 03:09:35.176 +01:00 [INF] Checking If-None-Match.
+2023-05-08 03:09:35.176 +01:00 [INF] Checking If-None-Match: "2B2948D2433EBA17850AA2694276ACF6".
+2023-05-08 03:09:35.179 +01:00 [INF] ETag valid: "2B2948D2433EBA17850AA2694276ACF6".
+2023-05-08 03:09:35.186 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 03:09:35.224 +01:00 [INF] Generation done. ETag: Strong, "2B2948D2433EBA17850AA2694276ACF6", Last-Modified: Mon, 08 May 2023 02:01:17 GMT.
+2023-05-08 03:09:35.224 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 03:09:35.227 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 97.9693ms
+2023-05-08 03:16:11.684 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 03:16:12.316 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 03:16:12.318 +01:00 [INF] Hosting environment: Development
+2023-05-08 03:16:12.318 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 03:16:12.403 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 03:16:14.356 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 03:16:14.379 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1988.2134ms
+2023-05-08 03:16:14.411 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 03:16:14.430 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 20.6409ms
+2023-05-08 03:16:14.645 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 234.0581ms
+2023-05-08 03:16:14.811 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 03:16:15.484 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 673.5621ms
+2023-05-08 03:17:16.497 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 03:17:16.575 +01:00 [INF] CORS policy execution successful.
+2023-05-08 03:17:16.603 +01:00 [INF] No cached response available for this request.
+2023-05-08 03:17:16.682 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 03:17:16.714 +01:00 [INF] No saved response found in store.
+2023-05-08 03:17:16.714 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 03:17:16.729 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 03:17:16.729 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 03:17:16.729 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 03:17:17.357 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 03:17:17.463 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 03:18:07.144 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 49670.1765ms
+2023-05-08 03:18:07.153 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 03:18:07.174 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The expression 'products.AsQueryable().Select(product => product.ImageUrls)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|32_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BuyNG.Core.Repository.GenericRepository`1.GetAll[T1,T2](Expression`1 expression, Expression`1 includes, Expression`1 alsoIncludes) in C:\Users\HP\Desktop\C# project\BuyNG.Core\Repository\GenericRepository.cs:line 102
+   at BuyNG.Controllers.ProductCategoryController.GetCategories() in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductCategoryController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 03:18:08.593 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)
+2023-05-08 03:18:25.906 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 500 - application/json 69409.1876ms
+2023-05-08 03:23:13.930 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 03:23:14.705 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 03:23:14.707 +01:00 [INF] Hosting environment: Development
+2023-05-08 03:23:14.707 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 03:23:14.769 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 03:23:17.521 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 03:23:17.560 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 2787.0855ms
+2023-05-08 03:23:17.579 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 50.1202ms
+2023-05-08 03:23:17.600 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 03:23:17.784 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.9982ms
+2023-05-08 03:23:18.046 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 03:23:18.777 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 730.3382ms
+2023-05-08 03:24:01.194 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 03:24:01.285 +01:00 [INF] CORS policy execution successful.
+2023-05-08 03:24:01.298 +01:00 [INF] No cached response available for this request.
+2023-05-08 03:24:01.343 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 03:24:01.347 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 03:24:01.347 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 03:24:01.357 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 03:24:01.357 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 03:24:01.357 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 03:24:01.736 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 03:24:01.796 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 04:27:20.512 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 04:27:21.124 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 04:27:21.126 +01:00 [INF] Hosting environment: Development
+2023-05-08 04:27:21.127 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 04:27:21.211 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 04:27:22.712 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 04:27:22.740 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1543.3766ms
+2023-05-08 04:27:22.759 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 25.3786ms
+2023-05-08 04:27:22.771 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 04:27:22.871 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.4180ms
+2023-05-08 04:27:23.034 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 04:27:23.700 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 665.7026ms
+2023-05-08 04:27:36.739 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 04:27:36.784 +01:00 [INF] CORS policy execution successful.
+2023-05-08 04:27:36.804 +01:00 [INF] No cached response available for this request.
+2023-05-08 04:27:36.862 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 04:27:36.868 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 04:27:36.868 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 04:27:36.879 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 04:27:36.880 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 04:27:36.880 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 04:27:37.291 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 04:27:37.338 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 04:27:52.472 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 15117.6833ms
+2023-05-08 04:27:52.488 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 04:27:52.503 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ImageUrl' specified in string based include path 'ImageUrl'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BuyNG.Core.Repository.GenericRepository`1.GetAll(Expression`1 expression, List`1 includes) in C:\Users\HP\Desktop\C# project\BuyNG.Core\Repository\GenericRepository.cs:line 85
+   at BuyNG.Controllers.ProductCategoryController.GetCategories() in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductCategoryController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 04:27:52.810 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)
+2023-05-08 04:27:53.219 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 500 - application/json 16479.6203ms
+2023-05-08 04:29:30.311 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 04:29:30.855 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 04:29:30.857 +01:00 [INF] Hosting environment: Development
+2023-05-08 04:29:30.857 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 04:29:30.948 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 04:29:32.631 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 04:29:32.638 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 04:29:32.698 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1707.8202ms
+2023-05-08 04:29:32.751 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 114.4325ms
+2023-05-08 04:29:32.830 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 192.5459ms
+2023-05-08 04:29:33.000 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 04:29:33.584 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 583.9900ms
+2023-05-08 04:29:58.433 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 04:29:58.507 +01:00 [INF] CORS policy execution successful.
+2023-05-08 04:29:58.523 +01:00 [INF] No cached response available for this request.
+2023-05-08 04:29:58.565 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 04:29:58.568 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 04:29:58.568 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 04:29:58.578 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 04:29:58.578 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 04:29:58.578 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 04:29:59.009 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 04:29:59.088 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 04:30:04.064 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 4962.2051ms
+2023-05-08 04:30:04.071 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 04:30:04.090 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ImageUrls' specified in string based include path 'ImageUrls'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BuyNG.Core.Repository.GenericRepository`1.GetAll(Expression`1 expression, List`1 includes) in C:\Users\HP\Desktop\C# project\BuyNG.Core\Repository\GenericRepository.cs:line 85
+   at BuyNG.Controllers.ProductCategoryController.GetCategories() in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductCategoryController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 04:30:04.287 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)
+2023-05-08 04:30:04.663 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 500 - application/json 6230.1361ms
+2023-05-08 09:22:38.327 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 09:22:39.050 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 09:22:39.052 +01:00 [INF] Hosting environment: Development
+2023-05-08 09:22:39.052 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 09:22:39.156 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 09:22:40.810 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 09:22:40.838 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1699.1272ms
+2023-05-08 09:22:40.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 22.0380ms
+2023-05-08 09:22:40.948 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 09:22:41.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.6462ms
+2023-05-08 09:22:41.373 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 09:22:41.531 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/favicon-32x32.png - -
+2023-05-08 09:22:41.618 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-08 09:22:41.619 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/favicon-32x32.png - - - 200 628 image/png 90.1894ms
+2023-05-08 09:22:41.978 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 605.9795ms
+2023-05-08 09:23:07.727 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 09:23:07.817 +01:00 [INF] CORS policy execution successful.
+2023-05-08 09:23:07.840 +01:00 [INF] No cached response available for this request.
+2023-05-08 09:23:07.924 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 09:23:07.933 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 09:23:07.933 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 09:23:07.948 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 09:23:07.948 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 09:23:07.948 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 09:23:08.612 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 09:23:08.722 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 09:23:15.483 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-05-08 09:23:18.203 +01:00 [INF] Executed DbCommand (178ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 09:23:18.497 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 09:23:18.925 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 10191.4532ms
+2023-05-08 09:23:18.928 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 09:23:18.956 +01:00 [INF] Generating expiration headers.
+2023-05-08 09:23:18.957 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 08:28:18 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 09:23:18.971 +01:00 [INF] Generating Validation headers.
+2023-05-08 09:23:18.998 +01:00 [INF] Validation headers generated. ETag: Strong, "56327EFAD5828486781DEDDFB6360204". Last-Modified: Mon, 08 May 2023 08:23:18 GMT
+2023-05-08 09:23:18.999 +01:00 [INF] Generating Vary header.
+2023-05-08 09:23:18.999 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 09:23:19.022 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 09:23:19.057 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 2823 application/json;+charset=utf-8 11330.2113ms
+2023-05-08 11:07:29.201 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 11:07:29.203 +01:00 [INF] CORS policy execution successful.
+2023-05-08 11:07:29.211 +01:00 [INF] No cached response available for this request.
+2023-05-08 11:07:29.211 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 11:07:29.223 +01:00 [INF] Checking If-None-Match.
+2023-05-08 11:07:29.223 +01:00 [INF] Checking If-None-Match: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 11:07:29.224 +01:00 [INF] ETag valid: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 11:07:29.226 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 11:07:29.232 +01:00 [INF] Generation done. ETag: Strong, "56327EFAD5828486781DEDDFB6360204", Last-Modified: Mon, 08 May 2023 08:23:18 GMT.
+2023-05-08 11:07:29.232 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 11:07:29.234 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 32.8358ms
+2023-05-08 11:48:31.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 11:48:31.838 +01:00 [INF] CORS policy execution successful.
+2023-05-08 11:48:31.838 +01:00 [INF] No cached response available for this request.
+2023-05-08 11:48:31.845 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 11:48:31.846 +01:00 [INF] Checking If-None-Match.
+2023-05-08 11:48:31.847 +01:00 [INF] Checking If-None-Match: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 11:48:31.847 +01:00 [INF] ETag valid: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 11:48:31.847 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 11:48:31.847 +01:00 [INF] Generation done. ETag: Strong, "56327EFAD5828486781DEDDFB6360204", Last-Modified: Mon, 08 May 2023 08:23:18 GMT.
+2023-05-08 11:48:31.847 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 11:48:31.847 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 10.9513ms
+2023-05-08 12:09:30.200 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 12:09:30.205 +01:00 [INF] CORS policy execution successful.
+2023-05-08 12:09:30.207 +01:00 [INF] No cached response available for this request.
+2023-05-08 12:09:30.207 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 12:09:30.212 +01:00 [INF] Checking If-None-Match.
+2023-05-08 12:09:30.213 +01:00 [INF] Checking If-None-Match: "A4E2126B3D034832E2F4F9437A8A5A26".
+2023-05-08 12:09:30.213 +01:00 [INF] Not valid. No match found for ETag.
+2023-05-08 12:09:30.213 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 12:09:30.214 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 12:09:30.214 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 12:09:30.214 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 12:09:30.253 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 12:09:30.262 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 12:09:30.512 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 12:09:30.585 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 12:09:30.590 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 327.6992ms
+2023-05-08 12:09:30.590 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 12:09:30.591 +01:00 [INF] Generating expiration headers.
+2023-05-08 12:09:30.592 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 11:14:30 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 12:09:30.592 +01:00 [INF] Generating Validation headers.
+2023-05-08 12:09:30.593 +01:00 [INF] Validation headers generated. ETag: Strong, "56327EFAD5828486781DEDDFB6360204". Last-Modified: Mon, 08 May 2023 11:09:30 GMT
+2023-05-08 12:09:30.593 +01:00 [INF] Generating Vary header.
+2023-05-08 12:09:30.593 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 12:09:30.597 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 12:09:30.598 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 2823 application/json;+charset=utf-8 402.5064ms
+2023-05-08 12:19:53.032 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 12:19:53.036 +01:00 [INF] CORS policy execution successful.
+2023-05-08 12:19:53.038 +01:00 [INF] No cached response available for this request.
+2023-05-08 12:19:53.039 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 12:19:53.040 +01:00 [INF] Checking If-None-Match.
+2023-05-08 12:19:53.040 +01:00 [INF] Checking If-None-Match: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 12:19:53.040 +01:00 [INF] ETag valid: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 12:19:53.044 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 12:19:53.045 +01:00 [INF] Generation done. ETag: Strong, "56327EFAD5828486781DEDDFB6360204", Last-Modified: Mon, 08 May 2023 11:09:30 GMT.
+2023-05-08 12:19:53.045 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 12:19:53.045 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 14.1898ms
+2023-05-08 12:56:34.455 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 12:56:34.455 +01:00 [INF] CORS policy execution successful.
+2023-05-08 12:56:34.455 +01:00 [INF] No cached response available for this request.
+2023-05-08 12:56:34.455 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 12:56:34.455 +01:00 [INF] Checking If-None-Match.
+2023-05-08 12:56:34.456 +01:00 [INF] Checking If-None-Match: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 12:56:34.456 +01:00 [INF] ETag valid: "56327EFAD5828486781DEDDFB6360204".
+2023-05-08 12:56:34.456 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 12:56:34.456 +01:00 [INF] Generation done. ETag: Strong, "56327EFAD5828486781DEDDFB6360204", Last-Modified: Mon, 08 May 2023 11:09:30 GMT.
+2023-05-08 12:56:34.456 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 12:56:34.457 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 1.9654ms
+2023-05-08 13:42:50.295 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/C://Users//HP//Desktop//C - -
+2023-05-08 13:42:50.299 +01:00 [INF] No cached response available for this request.
+2023-05-08 13:42:50.299 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 13:42:50.299 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 13:42:50.299 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 13:42:50.299 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 13:42:50.299 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 13:42:50.299 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 13:42:50.323 +01:00 [INF] Generating expiration headers.
+2023-05-08 13:42:50.323 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 12:47:50 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 13:42:50.323 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-08 13:42:50.323 +01:00 [INF] Generating Vary header.
+2023-05-08 13:42:50.323 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 13:42:50.323 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 13:42:50.334 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/C://Users//HP//Desktop//C - - - 404 - - 38.7379ms
+2023-05-08 15:48:21.838 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 15:48:22.186 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 15:48:22.188 +01:00 [INF] Hosting environment: Development
+2023-05-08 15:48:22.188 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 15:48:22.247 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 15:48:23.004 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 15:48:23.009 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 764.7603ms
+2023-05-08 15:48:23.030 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 15:48:23.030 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 18.8442ms
+2023-05-08 15:48:23.111 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.5480ms
+2023-05-08 15:48:23.232 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 15:48:24.034 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 801.8027ms
+2023-05-08 15:51:24.810 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/ProductImages//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg - -
+2023-05-08 15:51:24.950 +01:00 [INF] Sending file. Request path: '//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg'. Physical path: 'C:\Users\HP\Desktop\C# project\BuyNG\ProductImages\20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg'
+2023-05-08 15:51:24.961 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/ProductImages//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg - - - 200 1453600 image/jpeg 150.8747ms
+2023-05-08 15:51:25.542 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/favicon.ico - -
+2023-05-08 15:51:25.561 +01:00 [INF] No cached response available for this request.
+2023-05-08 15:51:25.602 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 15:51:25.607 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 15:51:25.607 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 15:51:25.611 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 15:51:25.611 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 15:51:25.611 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 15:51:25.864 +01:00 [INF] Generating expiration headers.
+2023-05-08 15:51:25.865 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 14:56:25 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 15:51:25.874 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-08 15:51:25.876 +01:00 [INF] Generating Vary header.
+2023-05-08 15:51:25.876 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 15:51:25.877 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 15:51:25.883 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/favicon.ico - - - 404 - - 340.7245ms
+2023-05-08 15:51:57.832 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/ProductImages//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg - -
+2023-05-08 15:51:57.919 +01:00 [INF] Sending file. Request path: '//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg'. Physical path: 'C:\Users\HP\Desktop\C# project\BuyNG\ProductImages\20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg'
+2023-05-08 15:51:58.002 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/ProductImages//20ff1d58-9218-4da2-afb7-4abeda4d0bf0.jpg - - - 200 1453600 image/jpeg 170.4766ms
+2023-05-08 16:31:06.149 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 16:31:06.412 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 16:31:06.413 +01:00 [INF] Hosting environment: Development
+2023-05-08 16:31:06.413 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 16:31:06.454 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 16:31:07.099 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 16:31:07.100 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 648.4046ms
+2023-05-08 16:31:07.114 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 16:31:07.124 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 17.3791ms
+2023-05-08 16:31:07.184 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.6888ms
+2023-05-08 16:31:07.295 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 16:31:07.650 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 354.8149ms
+2023-05-08 16:31:52.436 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 16:31:52.504 +01:00 [INF] No cached response available for this request.
+2023-05-08 16:31:52.543 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:31:52.567 +01:00 [INF] No saved response found in store.
+2023-05-08 16:31:52.567 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:31:52.572 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:31:52.573 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:31:52.573 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:31:52.780 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 16:31:52.828 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 16:32:13.453 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-05-08 16:32:15.895 +01:00 [INF] Executed DbCommand (289ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 16:32:16.065 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 16:32:16.289 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 23454.6335ms
+2023-05-08 16:32:16.290 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 16:32:16.299 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:32:16.300 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 15:37:16 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:32:16.311 +01:00 [INF] Generating Validation headers.
+2023-05-08 16:32:16.319 +01:00 [INF] Validation headers generated. ETag: Strong, "C5FF54AD9AF164A7009F1A065ADBA99A". Last-Modified: Mon, 08 May 2023 15:32:16 GMT
+2023-05-08 16:32:16.320 +01:00 [INF] Generating Vary header.
+2023-05-08 16:32:16.320 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:32:16.330 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 16:32:16.368 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 2823 application/json;+charset=utf-8 23932.5356ms
+2023-05-08 16:41:08.080 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/C:/Users/HP/Desktop/C - -
+2023-05-08 16:41:08.123 +01:00 [INF] No cached response available for this request.
+2023-05-08 16:41:08.124 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:41:08.124 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 16:41:08.124 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:41:08.124 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:41:08.124 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:41:08.124 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:41:08.134 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:41:08.134 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 15:46:08 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:41:08.134 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-08 16:41:08.134 +01:00 [INF] Generating Vary header.
+2023-05-08 16:41:08.134 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:41:08.134 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 16:41:08.137 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/C:/Users/HP/Desktop/C - - - 404 - - 58.9208ms
+2023-05-08 16:42:17.176 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/ProductImages/5fae9bd4-ec4d-459d-9d82-c6eed8ceb4dc.jpg - -
+2023-05-08 16:42:17.271 +01:00 [INF] Sending file. Request path: '/5fae9bd4-ec4d-459d-9d82-c6eed8ceb4dc.jpg'. Physical path: 'C:\Users\HP\Desktop\C# project\BuyNG\ProductImages\5fae9bd4-ec4d-459d-9d82-c6eed8ceb4dc.jpg'
+2023-05-08 16:42:17.276 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/ProductImages/5fae9bd4-ec4d-459d-9d82-c6eed8ceb4dc.jpg - - - 200 524288 image/jpeg 99.5019ms
+2023-05-08 16:53:21.376 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 16:53:21.684 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 16:53:21.685 +01:00 [INF] Hosting environment: Development
+2023-05-08 16:53:21.685 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 16:53:21.729 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 16:53:22.538 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 16:53:22.543 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 817.7271ms
+2023-05-08 16:53:22.552 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 16:53:22.554 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 12.7617ms
+2023-05-08 16:53:22.639 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.8624ms
+2023-05-08 16:53:22.762 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 16:53:23.124 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 361.6495ms
+2023-05-08 16:53:38.110 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-05-08 16:53:38.124 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:53:38.130 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 19.5903ms
+2023-05-08 16:53:38.140 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-05-08 16:53:38.165 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:53:38.213 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:53:38.215 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 16:53:38.215 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:53:38.225 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:53:38.225 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:53:38.225 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:53:38.474 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-05-08 16:53:38.517 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 16:53:45.763 +01:00 [INF] Executed DbCommand (186ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 16:53:46.038 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-05-08 16:53:46.050 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 7522.6499ms
+2023-05-08 16:53:46.053 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-05-08 16:53:46.071 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:53:46.072 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 15:58:46 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:53:46.084 +01:00 [INF] Generating Validation headers.
+2023-05-08 16:53:46.105 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Mon, 08 May 2023 15:53:46 GMT
+2023-05-08 16:53:46.106 +01:00 [INF] Generating Vary header.
+2023-05-08 16:53:46.106 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:53:46.163 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 8022.4586ms
+2023-05-08 16:53:59.407 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-05-08 16:53:59.408 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:53:59.408 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 0.9771ms
+2023-05-08 16:53:59.410 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 52
+2023-05-08 16:53:59.411 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:53:59.411 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:53:59.411 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 16:53:59.411 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:53:59.411 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:53:59.411 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:53:59.411 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:53:59.414 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-05-08 16:53:59.418 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 16:54:02.036 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 16:54:02.060 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-05-08 16:54:02.279 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-05-08 16:54:02.351 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-08 16:54:02.370 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-05-08 16:54:02.423 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-05-08 16:54:02.461 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-05-08 16:54:02.470 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 16:54:02.507 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-08 16:54:02.783 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 16:54:02.909 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 3491.2817ms
+2023-05-08 16:54:02.909 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-05-08 16:54:02.909 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:54:02.909 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 15:59:02 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:54:02.909 +01:00 [INF] Generating Validation headers.
+2023-05-08 16:54:02.910 +01:00 [INF] Validation headers generated. ETag: Strong, "511E43163F87935A6C93D6BE8C2C263D". Last-Modified: Mon, 08 May 2023 15:54:02 GMT
+2023-05-08 16:54:02.910 +01:00 [INF] Generating Vary header.
+2023-05-08 16:54:02.910 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:54:02.913 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 52 - 202 603 application/json;+charset=utf-8 3502.7166ms
+2023-05-08 16:54:02.941 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 16:54:02.941 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:54:02.941 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.6248ms
+2023-05-08 16:54:02.945 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 16:54:02.946 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:54:02.947 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:54:02.952 +01:00 [INF] No saved response found in store.
+2023-05-08 16:54:02.952 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:54:02.952 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:54:02.952 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:54:02.952 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:54:03.188 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 16:54:03.192 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 16:54:08.018 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-05-08 16:54:08.034 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 16:54:08.072 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 16:54:08.083 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 4890.3988ms
+2023-05-08 16:54:08.083 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 16:54:08.083 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:54:08.083 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 15:59:08 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:54:08.083 +01:00 [INF] Generating Validation headers.
+2023-05-08 16:54:08.083 +01:00 [INF] Validation headers generated. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46". Last-Modified: Mon, 08 May 2023 15:54:08 GMT
+2023-05-08 16:54:08.083 +01:00 [INF] Generating Vary header.
+2023-05-08 16:54:08.083 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:54:08.089 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 5144.0611ms
+2023-05-08 16:55:32.262 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 16:55:32.284 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:55:32.285 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 23.2440ms
+2023-05-08 16:55:32.287 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 16:55:32.287 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:55:32.287 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:55:32.287 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 16:55:32.287 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:55:32.287 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:55:32.288 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:55:32.288 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:55:32.329 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 16:55:32.354 +01:00 [INF] Route matched with {action = "GetUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 16:55:32.396 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-05-08 16:55:32.512 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 16:55:32.514 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.GetUser (BuyNG) in 159.5242ms
+2023-05-08 16:55:32.514 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 16:55:32.514 +01:00 [INF] Generating expiration headers.
+2023-05-08 16:55:32.514 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 16:00:32 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 16:55:32.514 +01:00 [INF] Generating Validation headers.
+2023-05-08 16:55:32.514 +01:00 [INF] Validation headers generated. ETag: Strong, "35ED002652F77CD2C289B7DCD80ACF49". Last-Modified: Mon, 08 May 2023 15:55:32 GMT
+2023-05-08 16:55:32.514 +01:00 [INF] Generating Vary header.
+2023-05-08 16:55:32.514 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 16:55:32.542 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 200 224 application/json;+charset=utf-8 254.7997ms
+2023-05-08 16:55:49.644 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 16:55:49.645 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:55:49.645 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.3591ms
+2023-05-08 16:58:17.091 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 16:58:17.091 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:58:17.091 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 0.3778ms
+2023-05-08 16:58:17.098 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundarypHrUa5ZJpQOHSa1n 7750034
+2023-05-08 16:58:17.098 +01:00 [INF] CORS policy execution successful.
+2023-05-08 16:58:17.098 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 16:58:17.098 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 16:58:17.098 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 16:58:17.098 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 16:58:17.098 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 16:58:17.098 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 16:58:17.099 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 16:58:17.111 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 16:58:34.236 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 17125.0854ms
+2023-05-08 16:58:34.237 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 16:58:34.240 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\HP\Desktop\C# project\BuyNG\https:\localhost:44307\ProductImages\39d875a5-d854-4891-9ea2-57360640e54d.jpg'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at BuyNG.Controllers.ProductController.CreateFileUrl(List`1 files, String domainName) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 186
+   at BuyNG.Controllers.ProductController.CreateProduct(CreateProductDTO productDTO) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 16:58:34.485 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductController.CreateProduct (BuyNG)
+2023-05-08 16:58:34.542 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundarypHrUa5ZJpQOHSa1n 7750034 - 500 - application/json 17444.7167ms
+2023-05-08 20:02:16.500 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:02:16.501 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:02:16.502 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 3.0517ms
+2023-05-08 20:02:16.508 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryXG3wqyme6EysMoxq 7750034
+2023-05-08 20:02:16.533 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:02:16.534 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:02:16.534 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:02:16.534 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:02:16.534 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:02:16.534 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:02:16.534 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:02:16.570 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:02:16 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:02:16.576 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:02:16 PM'.
+2023-05-08 20:02:16.576 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:02:16.576 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:02:16.973 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 397.2139ms
+2023-05-08 20:02:16.974 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:02:16.976 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\HP\Desktop\C# project\BuyNG\https:\localhost:44307\ProductImages\e09c7d6d-2985-4b54-866c-597c059e4e15.jpg'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at BuyNG.Controllers.ProductController.CreateFileUrl(List`1 files, String domainName) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 186
+   at BuyNG.Controllers.ProductController.CreateProduct(CreateProductDTO productDTO) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 20:02:16.978 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductController.CreateProduct (BuyNG)
+2023-05-08 20:02:16.985 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryXG3wqyme6EysMoxq 7750034 - 500 - application/json 477.0576ms
+2023-05-08 20:03:54.326 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 20:03:54.872 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 20:03:54.874 +01:00 [INF] Hosting environment: Development
+2023-05-08 20:03:54.874 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 20:03:54.938 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 20:03:56.440 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 20:03:56.444 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1514.1196ms
+2023-05-08 20:03:56.486 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 39.6411ms
+2023-05-08 20:03:56.486 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 20:03:56.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.5553ms
+2023-05-08 20:03:56.751 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 20:03:57.352 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 600.9578ms
+2023-05-08 20:04:06.605 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:04:06.622 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:04:06.628 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 23.0863ms
+2023-05-08 20:04:06.634 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryVQx0eAyD8iHcrfvZ 7750034
+2023-05-08 20:04:06.658 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:04:06.713 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:04:06.714 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:04:06.714 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:04:06.725 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:04:06.726 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:04:06.726 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:04:07.633 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:04:07 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:04:07.708 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:04:07 PM'.
+2023-05-08 20:04:07.728 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:04:07.914 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:04:12.774 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 4848.9812ms
+2023-05-08 20:04:12.780 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:04:12.796 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\HP\Desktop\C# project\BuyNG\https:\localhost:44307\ProductImages\53122fc8-9f43-4f32-95c4-903c9c531e80.jpg'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at BuyNG.Controllers.ProductController.CreateFileUrl(List`1 files, String domainName) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 186
+   at BuyNG.Controllers.ProductController.CreateProduct(CreateProductDTO productDTO) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 20:04:12.834 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductController.CreateProduct (BuyNG)
+2023-05-08 20:04:13.103 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryVQx0eAyD8iHcrfvZ 7750034 - 500 - application/json 6468.8937ms
+2023-05-08 20:04:41.382 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:04:41.406 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:04:41.413 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 32.1122ms
+2023-05-08 20:04:41.425 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundarya7PA8zMY5ECuYf1y 7750034
+2023-05-08 20:04:41.426 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:04:41.427 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:04:41.427 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:04:41.427 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:04:41.428 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:04:41.428 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:04:41.429 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:04:41.510 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:04:41 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:04:41.513 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:04:41 PM'.
+2023-05-08 20:04:41.514 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:04:41.516 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:05:47.937 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 66420.1634ms
+2023-05-08 20:05:47.937 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:05:47.939 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\HP\Desktop\C# project\BuyNG\https:\localhost:44307\ProductImages\f1eab963-7ddd-4ba7-a334-7452b980bc82.jpg'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at BuyNG.Controllers.ProductController.CreateFileUrl(List`1 files, String domainName) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 186
+   at BuyNG.Controllers.ProductController.CreateProduct(CreateProductDTO productDTO) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 20:05:48.085 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductController.CreateProduct (BuyNG)
+2023-05-08 20:05:48.204 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundarya7PA8zMY5ECuYf1y 7750034 - 500 - application/json 66778.9788ms
+2023-05-08 20:08:01.475 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 20:08:01.937 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 20:08:01.938 +01:00 [INF] Hosting environment: Development
+2023-05-08 20:08:01.938 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 20:08:02.026 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 20:08:03.422 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 20:08:03.448 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1432.9700ms
+2023-05-08 20:08:03.470 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 23.6325ms
+2023-05-08 20:08:03.473 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 20:08:03.632 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 158.6505ms
+2023-05-08 20:08:03.778 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 20:08:04.315 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 537.2767ms
+2023-05-08 20:08:33.169 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:08:33.305 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:08:33.328 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 158.7605ms
+2023-05-08 20:08:33.333 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryzvmiG2Xtps8tMMzz 7750034
+2023-05-08 20:08:33.357 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:08:33.407 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:08:33.407 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:08:33.407 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:08:33.419 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:08:33.419 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:08:33.419 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:08:34.437 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:08:34 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:08:34.516 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:08:34 PM'.
+2023-05-08 20:08:34.543 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:08:34.669 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:11:44.967 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 190285.6048ms
+2023-05-08 20:11:44.976 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:11:45.000 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BuyNG.Controllers.ProductController.CreateProduct(CreateProductDTO productDTO) in C:\Users\HP\Desktop\C# project\BuyNG\Controllers\ProductController.cs:line 91
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-05-08 20:11:45.059 +01:00 [ERR] Something went wrong in the BuyNG.Controllers.ProductController.CreateProduct (BuyNG)
+2023-05-08 20:11:45.361 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryzvmiG2Xtps8tMMzz 7750034 - 500 - application/json 192027.7963ms
+2023-05-08 20:14:22.996 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:14:23.023 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:14:23.024 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 33.9728ms
+2023-05-08 20:14:23.036 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:14:23.043 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:14:23.044 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:14:23.101 +01:00 [INF] No saved response found in store.
+2023-05-08 20:14:23.101 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:14:23.101 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:14:23.101 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:14:23.101 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:14:23.131 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:14:23 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:14:23.132 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:14:23 PM'.
+2023-05-08 20:14:23.132 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 20:14:23.142 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 20:14:33.851 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:14:33.852 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:14:33.863 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:14:33.909 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:14:33.910 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 47.6330ms
+2023-05-08 20:14:33.934 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:14:33.987 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:14:33.992 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:14:33.993 +01:00 [INF] No saved response found in store.
+2023-05-08 20:14:33.994 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:14:33.994 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:14:33.994 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:14:33.994 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:14:33.997 +01:00 [INF] No cached response available for this request.
+2023-05-08 20:14:34.004 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:14:34.005 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 20:14:34.005 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:14:34.005 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:14:34.005 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:14:34.005 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:14:34.017 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:14:34 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:14:34.019 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:14:34 PM'.
+2023-05-08 20:14:34.020 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 20:14:34.050 +01:00 [INF] Route matched with {action = "GetUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 20:14:34.061 +01:00 [INF] Request get:/api/productcategory from IP ::1 has been blocked, quota 1/2s exceeded by 1. Blocked by rule *, TraceIdentifier 80000080-0002-f900-b63f-84710c7967bb. MonitorMode: False
+2023-05-08 20:14:34.083 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:14:34.084 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:19:34 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:14:34.097 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-08 20:14:34.098 +01:00 [INF] Generating Vary header.
+2023-05-08 20:14:34.099 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:14:34.102 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 20:14:34.103 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 429 - text/plain 253.0435ms
+2023-05-08 20:14:35.093 +01:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-05-08 20:14:36.816 +01:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 20:14:36.817 +01:00 [INF] Executed DbCommand (129ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-05-08 20:14:36.976 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 20:14:36.997 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 20:14:37.029 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.GetUser (BuyNG) in 2978.6174ms
+2023-05-08 20:14:37.029 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 13886.7574ms
+2023-05-08 20:14:37.029 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 20:14:37.029 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 20:14:37.029 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:14:37.029 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:14:37.029 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:19:37 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:14:37.029 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:19:37 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:14:37.029 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:14:37.029 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:14:37.035 +01:00 [INF] Validation headers generated. ETag: Strong, "35ED002652F77CD2C289B7DCD80ACF49". Last-Modified: Mon, 08 May 2023 19:14:37 GMT
+2023-05-08 20:14:37.035 +01:00 [INF] Generating Vary header.
+2023-05-08 20:14:37.035 +01:00 [INF] Validation headers generated. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46". Last-Modified: Mon, 08 May 2023 19:14:37 GMT
+2023-05-08 20:14:37.035 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:14:37.035 +01:00 [INF] Generating Vary header.
+2023-05-08 20:14:37.035 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:14:37.050 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 14014.8369ms
+2023-05-08 20:14:37.053 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 200 224 application/json;+charset=utf-8 3119.6198ms
+2023-05-08 20:17:31.519 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:17:31.522 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:17:31.525 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 6.0693ms
+2023-05-08 20:20:43.152 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:20:43.152 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:20:43.160 +01:00 [INF] No cached response available for this request.
+2023-05-08 20:20:43.160 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:20:43.161 +01:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2023-05-08 20:20:43.167 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:20:43.167 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:20:43.167 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:20:43.167 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:20:43.168 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:20:43.168 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:20:43.178 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 14.7818ms
+2023-05-08 20:20:43.179 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 20:20:43.181 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:20:43.181 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:20:43.181 +01:00 [INF] Route matched with {action = "GetCategories", controller = "ProductCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BuyNG.Controllers.ProductCategoryController (BuyNG).
+2023-05-08 20:20:43.181 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:20:46.468 +01:00 [INF] Checking If-None-Match.
+2023-05-08 20:20:46.468 +01:00 [INF] Checking If-None-Match: "35ED002652F77CD2C289B7DCD80ACF49".
+2023-05-08 20:20:46.471 +01:00 [INF] ETag valid: "35ED002652F77CD2C289B7DCD80ACF49".
+2023-05-08 20:20:46.477 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 20:20:46.494 +01:00 [INF] Generation done. ETag: Strong, "35ED002652F77CD2C289B7DCD80ACF49", Last-Modified: Mon, 08 May 2023 19:14:37 GMT.
+2023-05-08 20:20:46.494 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 304 - - 3313.5080ms
+2023-05-08 20:20:46.508 +01:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [t].[Id], [t].[ApplicationUserId], [t].[CategoryId], [t].[Description], [t].[Location], [t].[Name], [t].[Price], [t].[Quantity], [t].[Id0], [t].[ProductId], [t].[Url]
+FROM [ProductCategories] AS [p]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[ApplicationUserId], [p0].[CategoryId], [p0].[Description], [p0].[Location], [p0].[Name], [p0].[Price], [p0].[Quantity], [i].[Id] AS [Id0], [i].[ProductId], [i].[Url]
+    FROM [Products] AS [p0]
+    LEFT JOIN [ImageUrls] AS [i] ON [p0].[Id] = [i].[ProductId]
+) AS [t] ON [p].[Id] = [t].[CategoryId]
+ORDER BY [p].[Id], [t].[Id]
+2023-05-08 20:20:46.511 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BuyNG.Core.EntityDTOs.ProductCategoryDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 20:20:46.511 +01:00 [INF] Executed action BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG) in 3330.3357ms
+2023-05-08 20:20:46.512 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductCategoryController.GetCategories (BuyNG)'
+2023-05-08 20:20:46.512 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:20:46.512 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:25:46 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:20:46.512 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:20:46.512 +01:00 [INF] Validation headers generated. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46". Last-Modified: Mon, 08 May 2023 19:20:46 GMT
+2023-05-08 20:20:46.512 +01:00 [INF] Generating Vary header.
+2023-05-08 20:20:46.512 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:20:46.513 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 20:20:46.513 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 200 498 application/json;+charset=utf-8 3361.7111ms
+2023-05-08 20:22:07.746 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:22:07.746 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:22:07.746 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.5009ms
+2023-05-08 20:22:19.310 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:22:19.310 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:22:19.310 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.6997ms
+2023-05-08 20:24:44.638 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:24:44.638 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:24:44.639 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 1.4657ms
+2023-05-08 20:26:02.835 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:26:02.844 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:02.866 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 26.1063ms
+2023-05-08 20:26:02.877 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:26:02.884 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:02.902 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:26:02.910 +01:00 [INF] Checking If-None-Match.
+2023-05-08 20:26:02.910 +01:00 [INF] Checking If-None-Match: "A0B8D94C312B185910B7A71F9B299B46".
+2023-05-08 20:26:02.911 +01:00 [INF] ETag valid: "A0B8D94C312B185910B7A71F9B299B46".
+2023-05-08 20:26:02.911 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 20:26:02.912 +01:00 [INF] Generation done. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46", Last-Modified: Mon, 08 May 2023 19:20:46 GMT.
+2023-05-08 20:26:02.944 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 35.6608ms
+2023-05-08 20:26:12.728 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - -
+2023-05-08 20:26:12.729 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:12.729 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/valid-user - - - 204 - - 1.4276ms
+2023-05-08 20:26:12.742 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18
+2023-05-08 20:26:12.743 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:12.743 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:26:12.743 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:26:12.743 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:26:12.743 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:26:12.744 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:26:12.744 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:26:12.748 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:26:12 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:26:12.750 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:26:12 PM'.
+2023-05-08 20:26:12.751 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-05-08 20:26:12.785 +01:00 [INF] Route matched with {action = "IsValidUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsValidUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 20:26:18.075 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 20:26:18.093 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-05-08 20:26:18.093 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.IsValidUser (BuyNG) in 5308.0272ms
+2023-05-08 20:26:18.094 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.IsValidUser (BuyNG)'
+2023-05-08 20:26:18.094 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:26:18.094 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:31:18 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:26:18.094 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:26:18.094 +01:00 [INF] Validation headers generated. ETag: Strong, "DFB19590771A5A65507CC511E2D32297". Last-Modified: Mon, 08 May 2023 19:26:18 GMT
+2023-05-08 20:26:18.094 +01:00 [INF] Generating Vary header.
+2023-05-08 20:26:18.094 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:26:18.095 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/valid-user application/json 18 - 200 - - 5353.5436ms
+2023-05-08 20:26:31.333 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/login - -
+2023-05-08 20:26:31.334 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:31.337 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/login - - - 204 - - 3.7628ms
+2023-05-08 20:26:31.362 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Account/login application/json 52
+2023-05-08 20:26:31.363 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:31.363 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:26:31.363 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:26:31.364 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:26:31.364 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:26:31.364 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:26:31.364 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:26:31.369 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:26:31 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-05-08 20:26:31.372 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '5/8/2023 4:09:02 PM', Current time: '5/8/2023 7:26:31 PM'.
+2023-05-08 20:26:31.373 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-05-08 20:26:31.413 +01:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(BuyNG.Core.EntityDTOs.LoginUserDTO) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 20:26:34.166 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 20:26:34.259 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-05-08 20:26:34.431 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-05-08 20:26:34.528 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-08 20:26:34.549 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-05-08 20:26:34.612 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-05-08 20:26:34.663 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-05-08 20:26:34.671 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-08 20:26:34.681 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-08 20:26:34.783 +01:00 [INF] Executing AcceptedResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 20:26:34.785 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.LoginUser (BuyNG) in 3371.874ms
+2023-05-08 20:26:34.786 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.LoginUser (BuyNG)'
+2023-05-08 20:26:34.786 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:26:34.786 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:31:34 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:26:34.786 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:26:34.786 +01:00 [INF] Validation headers generated. ETag: Strong, "371AE946E21EF0DA4F6B6F92C923F713". Last-Modified: Mon, 08 May 2023 19:26:34 GMT
+2023-05-08 20:26:34.786 +01:00 [INF] Generating Vary header.
+2023-05-08 20:26:34.786 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:26:34.789 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Account/login application/json 52 - 202 603 application/json;+charset=utf-8 3427.1365ms
+2023-05-08 20:26:34.860 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:26:34.860 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:26:34.861 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.6214ms
+2023-05-08 20:29:07.369 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:29:07.370 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:29:07.371 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 1.4505ms
+2023-05-08 20:29:07.385 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundary3MAY44Fk5s0WwPiq 7750046
+2023-05-08 20:29:07.386 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:29:07.387 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:29:07.387 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:29:07.388 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:29:07.391 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:29:07.391 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:29:07.391 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:29:07.493 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:29:07.493 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:29:52.406 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ApplicationUserId], [CategoryId], [Description], [Location], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-05-08 20:29:52.522 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Int32), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [ImageUrls] USING (
+VALUES (@p7, @p8, 0),
+(@p9, @p10, 1),
+(@p11, @p12, 2),
+(@p13, @p14, 3)) AS i ([ProductId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([ProductId], [Url])
+VALUES (i.[ProductId], i.[Url])
+OUTPUT INSERTED.[Id], i._Position;
+2023-05-08 20:29:52.617 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2023-05-08 20:29:52.617 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 45124.3308ms
+2023-05-08 20:29:52.617 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:29:52.617 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:29:52.618 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:34:52 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:29:52.618 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:29:52.618 +01:00 [INF] Validation headers generated. ETag: Strong, "8E1CFF362D760762B753332878D3E7E9". Last-Modified: Mon, 08 May 2023 19:29:52 GMT
+2023-05-08 20:29:52.618 +01:00 [INF] Generating Vary header.
+2023-05-08 20:29:52.618 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:29:52.624 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundary3MAY44Fk5s0WwPiq 7750046 - 201 - - 45239.3099ms
+2023-05-08 20:30:22.271 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:30:22.271 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:30:22.273 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 1.6412ms
+2023-05-08 20:33:00.166 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:33:00.166 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:33:00.173 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 7.1588ms
+2023-05-08 20:33:00.178 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryLkOXdtuDspcqF9XW 6106163
+2023-05-08 20:33:00.178 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:33:00.179 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:33:00.179 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:33:00.179 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:33:00.179 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:33:00.179 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:33:00.179 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:33:00.190 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:33:00.192 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:33:40.041 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ApplicationUserId], [CategoryId], [Description], [Location], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-05-08 20:33:40.054 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Int32), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [ImageUrls] USING (
+VALUES (@p7, @p8, 0),
+(@p9, @p10, 1),
+(@p11, @p12, 2),
+(@p13, @p14, 3)) AS i ([ProductId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([ProductId], [Url])
+VALUES (i.[ProductId], i.[Url])
+OUTPUT INSERTED.[Id], i._Position;
+2023-05-08 20:33:40.055 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2023-05-08 20:33:40.056 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 39863.8175ms
+2023-05-08 20:33:40.056 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:33:40.056 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:33:40.056 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:38:40 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:33:40.056 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:33:40.056 +01:00 [INF] Validation headers generated. ETag: Strong, "8E1CFF362D760762B753332878D3E7E9". Last-Modified: Mon, 08 May 2023 19:33:40 GMT
+2023-05-08 20:33:40.056 +01:00 [INF] Generating Vary header.
+2023-05-08 20:33:40.056 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:33:40.061 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryLkOXdtuDspcqF9XW 6106163 - 201 - - 39882.5904ms
+2023-05-08 20:36:20.279 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Product - -
+2023-05-08 20:36:20.280 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:20.281 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Product - - - 204 - - 1.9988ms
+2023-05-08 20:36:20.294 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryNmcvU8pHB73Alya1 14193713
+2023-05-08 20:36:20.295 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:20.295 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:36:20.295 +01:00 [INF] Not valid - method isn't GET or HEAD.
+2023-05-08 20:36:20.296 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:36:20.296 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:36:20.296 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:36:20.296 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:36:20.300 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:36:20.300 +01:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(BuyNG.Core.EntityDTOs.CreateProductDTO) on controller BuyNG.Controllers.ProductController (BuyNG).
+2023-05-08 20:36:27.745 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ApplicationUserId], [CategoryId], [Description], [Location], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-05-08 20:36:27.755 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Int32), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [ImageUrls] USING (
+VALUES (@p7, @p8, 0),
+(@p9, @p10, 1),
+(@p11, @p12, 2),
+(@p13, @p14, 3)) AS i ([ProductId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([ProductId], [Url])
+VALUES (i.[ProductId], i.[Url])
+OUTPUT INSERTED.[Id], i._Position;
+2023-05-08 20:36:27.757 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2023-05-08 20:36:27.757 +01:00 [INF] Executed action BuyNG.Controllers.ProductController.CreateProduct (BuyNG) in 7454.9403ms
+2023-05-08 20:36:27.757 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.ProductController.CreateProduct (BuyNG)'
+2023-05-08 20:36:27.757 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:36:27.757 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:41:27 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:36:27.757 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:36:27.757 +01:00 [INF] Validation headers generated. ETag: Strong, "8E1CFF362D760762B753332878D3E7E9". Last-Modified: Mon, 08 May 2023 19:36:27 GMT
+2023-05-08 20:36:27.757 +01:00 [INF] Generating Vary header.
+2023-05-08 20:36:27.757 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:36:27.763 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44307/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryNmcvU8pHB73Alya1 14193713 - 201 - - 7468.2613ms
+2023-05-08 20:36:47.665 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:36:47.665 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:47.666 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 0.7287ms
+2023-05-08 20:36:47.670 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:36:47.670 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:47.671 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:36:47.672 +01:00 [INF] Checking If-None-Match.
+2023-05-08 20:36:47.672 +01:00 [INF] Checking If-None-Match: "A0B8D94C312B185910B7A71F9B299B46".
+2023-05-08 20:36:47.672 +01:00 [INF] ETag valid: "A0B8D94C312B185910B7A71F9B299B46".
+2023-05-08 20:36:47.672 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 20:36:47.676 +01:00 [INF] Generation done. ETag: Strong, "A0B8D94C312B185910B7A71F9B299B46", Last-Modified: Mon, 08 May 2023 19:20:46 GMT.
+2023-05-08 20:36:47.676 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 304 - - 6.1452ms
+2023-05-08 20:36:52.579 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:36:52.579 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:52.580 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 0.7118ms
+2023-05-08 20:36:52.584 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:36:52.585 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:36:52.585 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:36:52.585 +01:00 [INF] Checking If-None-Match.
+2023-05-08 20:36:52.585 +01:00 [INF] Checking If-None-Match: "35ED002652F77CD2C289B7DCD80ACF49".
+2023-05-08 20:36:52.585 +01:00 [INF] ETag valid: "35ED002652F77CD2C289B7DCD80ACF49".
+2023-05-08 20:36:52.585 +01:00 [INF] Generating 304 - Not Modified.
+2023-05-08 20:36:52.585 +01:00 [INF] Generation done. ETag: Strong, "35ED002652F77CD2C289B7DCD80ACF49", Last-Modified: Mon, 08 May 2023 19:14:37 GMT.
+2023-05-08 20:36:52.586 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 304 - - 1.1588ms
+2023-05-08 20:38:57.416 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:38:57.416 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:38:57.426 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 12.1930ms
+2023-05-08 20:39:01.029 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:39:01.029 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:39:01.030 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 0.9302ms
+2023-05-08 20:40:13.556 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:40:13.558 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:40:13.560 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/ProductCategory - - - 204 - - 4.0742ms
+2023-05-08 20:40:16.854 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:40:16.854 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:40:16.855 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 0.6740ms
+2023-05-08 20:42:26.104 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 20:42:26.663 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 20:42:26.665 +01:00 [INF] Hosting environment: Development
+2023-05-08 20:42:26.666 +01:00 [INF] Content root path: C:\Users\HP\Desktop\C# project\BuyNG\
+2023-05-08 20:42:26.751 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/index.html - -
+2023-05-08 20:42:28.342 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 20:42:28.374 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_framework/aspnetcore-browser-refresh.js - - - 200 11980 application/javascript;+charset=utf-8 24.0211ms
+2023-05-08 20:42:28.374 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/index.html - - - 200 - text/html;charset=utf-8 1632.4854ms
+2023-05-08 20:42:28.479 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/_vs/browserLink - -
+2023-05-08 20:42:28.621 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 141.4074ms
+2023-05-08 20:42:28.797 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - -
+2023-05-08 20:42:29.665 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 868.2791ms
+2023-05-08 20:42:57.511 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/ProductCategory - -
+2023-05-08 20:42:57.527 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:42:57.581 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:42:57.589 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 62.2401ms
+2023-05-08 20:42:57.596 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:42:57.597 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:42:57.597 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:42:57.624 +01:00 [INF] No cached response available for this request.
+2023-05-08 20:42:57.667 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:42:57.667 +01:00 [INF] Checking for conditional GET/HEAD.
+2023-05-08 20:42:57.694 +01:00 [INF] No saved response found in store.
+2023-05-08 20:42:57.694 +01:00 [INF] No saved response found in store.
+2023-05-08 20:42:57.694 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:42:57.694 +01:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2023-05-08 20:42:57.706 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:42:57.706 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:42:57.706 +01:00 [INF] Checking for conditional PUT/PATCH.
+2023-05-08 20:42:57.706 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:42:57.706 +01:00 [INF] Not valid - method isn't PUT or PATCH.
+2023-05-08 20:42:57.707 +01:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2023-05-08 20:42:57.927 +01:00 [INF] Request get:/api/productcategory from IP ::1 has been blocked, quota 1/2s exceeded by 1. Blocked by rule *, TraceIdentifier 8000009a-0000-fe00-b63f-84710c7967bb. MonitorMode: False
+2023-05-08 20:42:57.966 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:42:57.969 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:47:57 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:42:57.988 +01:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2023-05-08 20:42:57.989 +01:00 [INF] Generating Vary header.
+2023-05-08 20:42:57.989 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:42:58.001 +01:00 [INF] The response could not be cached for this request.
+2023-05-08 20:42:58.005 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/ProductCategory - - - 429 - text/plain 494.2079ms
+2023-05-08 20:42:59.007 +01:00 [INF] Executing endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 20:42:59.167 +01:00 [INF] Route matched with {action = "GetUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller BuyNG.Controllers.AccountController (BuyNG).
+2023-05-08 20:43:13.759 +01:00 [INF] Executed DbCommand (339ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-05-08 20:43:14.250 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[BuyNG.Core.EntityDTOs.AppUserDTO, BuyNG.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 20:43:14.526 +01:00 [INF] Executed action BuyNG.Controllers.AccountController.GetUser (BuyNG) in 15346.5008ms
+2023-05-08 20:43:14.529 +01:00 [INF] Executed endpoint 'BuyNG.Controllers.AccountController.GetUser (BuyNG)'
+2023-05-08 20:43:14.533 +01:00 [INF] Generating expiration headers.
+2023-05-08 20:43:14.533 +01:00 [INF] Expiration headers generated. Expires: Mon, 08 May 2023 19:48:14 GMT. Cache-Control: private,max-age=300,must-revalidate.
+2023-05-08 20:43:14.533 +01:00 [INF] Generating Validation headers.
+2023-05-08 20:43:14.542 +01:00 [INF] Validation headers generated. ETag: Strong, "35ED002652F77CD2C289B7DCD80ACF49". Last-Modified: Mon, 08 May 2023 19:43:14 GMT
+2023-05-08 20:43:14.542 +01:00 [INF] Generating Vary header.
+2023-05-08 20:43:14.542 +01:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2023-05-08 20:43:14.621 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 200 224 application/json;+charset=utf-8 17024.6392ms
+2023-05-08 20:45:50.195 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - -
+2023-05-08 20:45:50.213 +01:00 [INF] CORS policy execution successful.
+2023-05-08 20:45:50.213 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44307/api/Account/get-user/d613f91f-87e8-4d73-9eb1-be329cdd68d0 - - - 204 - - 19.7776ms
